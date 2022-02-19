@@ -6,13 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- image 6 -->
+    <!-- SMART FORM -->
+    <View
+        android:id="@+id/image6"
+        android:layout_width="81dp"
+        android:layout_height="85dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/image6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/smart_form"
+        android:layout_width="172dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="164dp"
+        android:gravity="top"
+        android:text="@string/smart_form"
+        android:textAppearance="@style/smart_form"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

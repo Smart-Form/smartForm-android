@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">smartformandroid</string>
+
+    <string name="smart_form">
+
+SMART FORM
+</string>
 </resources>
