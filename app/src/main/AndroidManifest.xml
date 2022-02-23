@@ -19,13 +19,13 @@
             android:name=".id_card"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".select"
             android:exported="false" />
         <activity
             android:name=".language"
             android:exported="false" />
         <activity
-            android:name=".select"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

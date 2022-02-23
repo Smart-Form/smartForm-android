@@ -87,6 +87,51 @@
         android:layout_alignParentBottom="true"
 
         android:background="@drawable/banner"
+        android:foreground="@drawable/banner_shader"
+        />
+    <ImageView
+        android:id="@+id/checkbox"
+
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="290dp"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="405dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/checkbox"
+        />
+    <TextView
+        android:id="@+id/form"
+
+        android:layout_width="150dp"
+        android:layout_height="172dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="287dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:text="@string/form"
+        android:textAppearance="@style/instruc"
+        android:gravity="center_horizontal|top"
         />
 
     <ImageButton
@@ -109,6 +154,51 @@
         android:layout_alignParentBottom="true"
 
         android:background="@drawable/banner2"
+        android:foreground="@drawable/banner_shader"
+        />
+    <ImageView
+        android:id="@+id/checkbox"
+
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="194dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/checkbox"
+        />
+    <TextView
+        android:id="@+id/form2"
+
+        android:layout_width="150dp"
+        android:layout_height="172dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="525dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:text="@string/form2"
+        android:textAppearance="@style/instruc"
+        android:gravity="center_horizontal|top"
         />
 
     <ImageButton
@@ -118,7 +208,7 @@
         android:layout_height="188dp"
 
         android:layout_marginStart="37dp"
-        android:layout_marginTop="697dp"
+        android:layout_marginTop="682dp"
         android:layout_marginEnd="37dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,6 +218,47 @@
         android:layout_alignParentEnd="true"
 
         android:background="@drawable/banner"
+        android:foreground="@drawable/banner_shader"
+        />
+    <ImageView
+        android:id="@+id/checkbox"
+
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="700dp"
+        android:layout_marginEnd="344dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:background="@drawable/checkbox"
+        />
+    <TextView
+        android:id="@+id/form3"
+
+        android:layout_width="150dp"
+        android:layout_height="172dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="683dp"
+        android:layout_marginEnd="54dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:text="@string/form"
+        android:textAppearance="@style/instruc"
+        android:gravity="center_horizontal|top"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
