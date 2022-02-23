@@ -10,13 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartformandroid">
         <activity
+            android:name=".type"
+            android:exported="false" />
+        <activity
+            android:name=".data_allow"
+            android:exported="false" />
+        <activity
+            android:name=".id_card"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".language"
             android:exported="false" />
         <activity
-            android:name=".id_card"
+            android:name=".select"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

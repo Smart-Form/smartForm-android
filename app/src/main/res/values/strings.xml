@@ -19,4 +19,20 @@
     <string name="instruc">
         Put your ID Card
     </string>
+    <string name="loading_txt">
+        loading
+    </string>
+
+    <string name="instruc2">
+        For Convenience,\nWill you save the\nthe information\nin our kiosk?
+    </string>
+
+    <string name="instruc3">
+        What you want\nto apply?
+    </string>
+
+    <string name="instruc4">
+        Government\nWelfare
+    </string>
+
 </resources>

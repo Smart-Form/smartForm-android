@@ -11,7 +11,12 @@
         <entry key="app/src/main/res/drawable/image_6.xml" value="0.163" />
         <entry key="app/src/main/res/layout/activity_2.xml" value="0.24592391304347827" />
         <entry key="app/src/main/res/layout/activity_3.xml" value="0.1387126019945603" />
+        <entry key="app/src/main/res/layout/activity_data_allow.xml" value="0.1622039794921875" />
+        <entry key="app/src/main/res/layout/activity_id_card.xml" value="0.17316409791477788" />
+        <entry key="app/src/main/res/layout/activity_language.xml" value="0.6006637168141593" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23281676998737494" />
+        <entry key="app/src/main/res/layout/activity_select.xml" value="0.17316409791477788" />
+        <entry key="app/src/main/res/layout/activity_type.xml" value="0.24155622060709706" />
         <entry key="app/src/main/res/layout/id_card.xml" value="0.1598037719726563" />
         <entry key="app/src/main/res/layout/language.xml" value="0.7538461538461538" />
         <entry key="app/src/main/res/layout/styles.xml" value="0.15020263424518743" />
