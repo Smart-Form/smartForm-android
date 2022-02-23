@@ -1,11 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">smartformandroid</string>
+    <string name="app_name">Smart Form</string>
 
     <string name="smart_form">
         SMART FORM
     </string>
+    <string name="one_for_all">
+        One For All\nSmar For Care
+    </string>
 
-    <string name="btn">
-        Start
+    <string name="lang">
+        語言
+    </string>
+    <string name="lang2">
+        Language
+    </string>
+
+    <string name="instruc">
+        Put your ID Card
     </string>
 </resources>

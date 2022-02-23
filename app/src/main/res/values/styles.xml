@@ -8,10 +8,35 @@
             #956F4F
         </item>
     </style>
-
-    <style name="btn">
+    <style name="one_for_all">
         <item name="android:textSize">
-            26sp
+            35sp
+        </item>
+        <item name="android:textColor">
+            #87624A
+        </item>
+    </style>
+
+    <style name="lang">
+        <item name="android:textSize">
+            50sp
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+    <style name="lang2">
+        <item name="android:textSize">
+            18sp
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <style name="instruc">
+        <item name="android:textSize">
+            48sp
         </item>
         <item name="android:textColor">
             #FFFFFF
