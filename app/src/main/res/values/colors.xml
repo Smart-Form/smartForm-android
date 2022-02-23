@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#af8367</color>
-    <color name="primaryLightColor">#e2b395</color>
-    <color name="primaryDarkColor">#7e563c</color>
-    <color name="secondaryColor">#d3ac9c</color>
-    <color name="secondaryLightColor">#ffdecd</color>
-    <color name="secondaryDarkColor">#a17d6e</color>
-    <color name="primaryTextColor">#ffffff</color>
-    <color name="secondaryTextColor">#000000</color>
+<!--    Unused Material Design Color Themes-->
+
+<!--    <color name="primaryColor">#af8367</color>-->
+<!--    <color name="primaryLightColor">#e2b395</color>-->
+<!--    <color name="primaryDarkColor">#7e563c</color>-->
+<!--    <color name="secondaryColor">#d3ac9c</color>-->
+<!--    <color name="secondaryLightColor">#ffdecd</color>-->
+<!--    <color name="secondaryDarkColor">#a17d6e</color>-->
+<!--    <color name="primaryTextColor">#ffffff</color>-->
+<!--    <color name="secondaryTextColor">#000000</color>-->
 </resources>
