@@ -14,22 +14,29 @@ public class select extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select);
 
-        ImageButton btn = (ImageButton)findViewById(R.id.banner);
+        ImageButton btn = (ImageButton)findViewById(R.id.back);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(select.this, MainActivity.class));
+                startActivity(new Intent(select.this, type.class));
             }
         });
-        ImageButton btn2 = (ImageButton)findViewById(R.id.banner2);
+        ImageButton btn2 = (ImageButton)findViewById(R.id.banner);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(select.this, MainActivity.class));
             }
         });
-        ImageButton btn3 = (ImageButton)findViewById(R.id.banner3);
+        ImageButton btn3 = (ImageButton)findViewById(R.id.banner2);
         btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(select.this, MainActivity.class));
+            }
+        });
+        ImageButton btn4 = (ImageButton)findViewById(R.id.banner3);
+        btn4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(select.this, MainActivity.class));
