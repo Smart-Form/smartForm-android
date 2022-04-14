@@ -25,16 +25,16 @@
     <ImageView
         android:id="@+id/smartform_logo"
 
-        android:layout_width="100sp"
-        android:layout_height="100sp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:layout_marginTop="75sp"
-        android:layout_marginEnd="75sp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="75dp"
 
         android:background="@drawable/smartform_logo"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,16 +44,16 @@
     <TextView
         android:id="@+id/smart_form"
 
-        android:layout_width="172sp"
-        android:layout_height="31sp"
+        android:layout_width="172dp"
+        android:layout_height="31dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:layout_marginTop="210sp"
-        android:layout_marginEnd="35sp"
+        android:layout_marginTop="210dp"
+        android:layout_marginEnd="35dp"
 
         android:text="@string/smart_form"
         android:textAppearance="@style/smart_form"
@@ -65,15 +65,15 @@
         android:id="@+id/lang"
 
         android:layout_width="match_parent"
-        android:layout_height="100sp"
+        android:layout_height="100dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:layout_marginStart="50sp"
-        android:layout_marginTop="275sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="275dp"
 
         android:text="語言"
         android:textAppearance="@style/title"
@@ -85,15 +85,15 @@
         android:id="@+id/lang2"
 
         android:layout_width="match_parent"
-        android:layout_height="50sp"
+        android:layout_height="50dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:layout_marginStart="50sp"
-        android:layout_marginTop="375sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="375dp"
 
         android:text="Language"
         android:textAppearance="@style/subtitle"
@@ -104,16 +104,16 @@
     <ImageView
         android:id="@+id/line"
 
-        android:layout_width="200sp"
-        android:layout_height="7sp"
+        android:layout_width="200dp"
+        android:layout_height="7dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:layout_marginStart="50sp"
-        android:layout_marginTop="450sp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="450dp"
 
         android:background="@drawable/line"
 
@@ -124,14 +124,15 @@
     <Button
         android:id="@+id/cht"
 
-        android:layout_width="250sp"
-        android:layout_height="250sp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="50sp"
+
+        android:layout_marginStart="50dp"
         android:backgroundTint="#D3AC9C"
         android:foreground="?android:attr/selectableItemBackground"
 
@@ -140,7 +141,7 @@
         android:textColor="#FFFFFF"
         android:textSize="75sp"
 
-        app:cornerRadius="125sp"
+        app:cornerRadius="125dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -151,14 +152,15 @@
     <Button
         android:id="@+id/eng"
 
-        android:layout_width="250sp"
-        android:layout_height="250sp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="50sp"
+
+        android:layout_marginEnd="50dp"
         android:backgroundTint="#D3AC9C"
         android:foreground="?android:attr/selectableItemBackground"
 
@@ -167,7 +169,7 @@
         android:textColor="#FFFFFF"
         android:textSize="55sp"
 
-        app:cornerRadius="125sp"
+        app:cornerRadius="125dp"
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
