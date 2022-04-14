@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         android:text="@string/instruc"
-        android:textAppearance="@style/instruc"
+        android:textAppearance="@style/title"
         />
 
     <ImageView
@@ -108,7 +108,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         android:text="@string/loading_txt"
-        android:textAppearance="@style/loading_txt"
+        android:textAppearance="@style/text"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

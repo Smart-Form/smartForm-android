@@ -41,7 +41,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         android:text="@string/instruc3"
-        android:textAppearance="@style/instruc"
+        android:textAppearance="@style/subtitle"
         />
 
     <ImageButton
