@@ -171,7 +171,6 @@
         android:maxLines="1"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="75sp"
         app:cornerRadius="125dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
@@ -199,7 +198,6 @@
         android:maxLines="1"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        android:textSize="55sp"
         app:cornerRadius="125dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
