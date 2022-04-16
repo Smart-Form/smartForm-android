@@ -13,9 +13,6 @@
 
         android:theme="@style/Theme.Smartformandroid">
         <activity
-            android:name=".launchScreen"
-            android:exported="false" />
-        <activity
             android:name=".type"
             android:exported="false" />
         <activity

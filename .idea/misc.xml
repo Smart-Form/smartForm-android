@@ -9,13 +9,15 @@
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1925" />
         <entry key="app/src/main/res/drawable/image6.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/image_6.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/shadow.xml" value="0.1635" />
         <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.11283003300330033" />
         <entry key="app/src/main/res/layout/activity_2.xml" value="0.24592391304347827" />
         <entry key="app/src/main/res/layout/activity_3.xml" value="0.1387126019945603" />
+        <entry key="app/src/main/res/layout/activity_address.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_data_allow.xml" value="0.28983459472656253" />
         <entry key="app/src/main/res/layout/activity_id_card.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.11707000732421877" />
-        <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.418707275390625" />
+        <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_select.xml" value="0.22888919557102777" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.11065943992773261" />

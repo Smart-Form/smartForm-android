@@ -17,11 +17,12 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:background="@drawable/bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+
+        android:background="@drawable/bg"
         />
 
     <ImageView
@@ -88,7 +89,7 @@
     <Button
         android:id="@+id/btn"
         android:layout_width="0dp"
-        android:layout_height="175dp"
+        android:layout_height="200dp"
 
         android:text="Start →"
         android:textColor="#FFFFFF"
@@ -107,31 +108,6 @@
         app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
-
-    <TextView
-        android:id="@+id/one_for_all"
-
-        android:layout_width="0dp"
-        android:layout_height="150dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-
-        android:text="@string/one_for_all"
-        android:textAppearance="@style/title2"
-        android:gravity="center_horizontal|top"
-
-        android:autoSizeTextType="uniform"
-
-        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintVertical_bias="0.865"
         />
 
     <ImageView
@@ -155,6 +131,31 @@
         app:layout_constraintVertical_bias="0.875"
 
         android:background="@drawable/path"
+        />
+
+    <TextView
+        android:id="@+id/one_for_all"
+
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="@string/one_for_all"
+        android:textAppearance="@style/title3"
+        android:gravity="center_horizontal|top"
+
+        android:textStyle="bold"
+
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.865"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

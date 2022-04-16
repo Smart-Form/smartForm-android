@@ -18,7 +18,7 @@ public class id_card extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(id_card.this, data_allow.class));
+                startActivity(new Intent(id_card.this, address.class));
             }
         });
     }
