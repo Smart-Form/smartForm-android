@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.airbnb.lottie.LottieAnimationView;
+
 public class id_card extends AppCompatActivity {
 
     @Override
@@ -14,7 +16,7 @@ public class id_card extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_id_card);
 
-        ImageButton btn = (ImageButton)findViewById(R.id.loading);
+        LottieAnimationView btn = (LottieAnimationView)findViewById(R.id.loading);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
