@@ -11,16 +11,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartformandroid">
         <activity
+            android:name=".bye"
+            android:exported="false" />
+        <activity
             android:name=".address"
             android:exported="false" />
         <activity
             android:name=".address_confirm"
-            android:exported="false" />
-        <activity
-            android:name=".type"
-            android:exported="false" />
-        <activity
-            android:name=".data_allow"
             android:exported="false" />
         <activity
             android:name=".id_card"
@@ -39,6 +36,7 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

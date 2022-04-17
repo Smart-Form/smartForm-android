@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".id_card">
+    tools:context=".address">
 
     <ImageView
         android:id="@+id/bg"
@@ -64,16 +64,15 @@
         android:id="@+id/instruc"
 
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="225dp"
 
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Put your ID Card"
-        android:autoSizeTextType="uniform"
-        android:textColor="#FFFFFF"
+        android:text="Put your Address"
+        android:textAppearance="@style/title2"
         android:gravity="center_horizontal|top"
 
         app:layout_constraintTop_toTopOf="parent"
@@ -85,11 +84,11 @@
         />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/idCard"
+        android:id="@+id/address"
 
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent="0.35"
+        app:layout_constraintHeight_percent="0.5"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"

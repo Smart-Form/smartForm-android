@@ -93,7 +93,6 @@
         android:layout_alignParentBottom="true"
 
         android:background="@drawable/banner"
-        android:foreground="@drawable/banner_shader"
         />
     <ImageView
         android:id="@+id/checkbox"
@@ -160,7 +159,6 @@
         android:layout_alignParentBottom="true"
 
         android:background="@drawable/banner2"
-        android:foreground="@drawable/banner_shader"
         />
     <ImageView
         android:id="@+id/checkbox2"
@@ -227,7 +225,6 @@
         android:layout_alignParentBottom="true"
 
         android:background="@drawable/banner"
-        android:foreground="@drawable/banner_shader"
         />
     <ImageView
         android:id="@+id/checkbox3"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".language">
+    tools:context=".bye">
 
     <ImageView
         android:id="@+id/bg"
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        android:background="@drawable/bg"
+        android:background="@android:color/white"
         />
 
     <ImageView
@@ -69,6 +69,51 @@
         app:layout_constraintVertical_bias="0.025"
         />
 
+    <ImageView
+        android:id="@+id/circle"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintWidth_percent="0.6"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:background="@drawable/circle_stroke"
+        />
+
+    <TextView
+        android:id="@+id/bye_text"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintWidth_percent="0.5"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="Summited Your Application"
+        android:autoSizeTextType="uniform"
+        android:gravity="center_horizontal|top"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="@+id/circle"
+        app:layout_constraintEnd_toEndOf="@+id/circle"
+        app:layout_constraintStart_toStartOf="@+id/circle"
+        app:layout_constraintTop_toTopOf="@+id/circle"
+        />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_titleStart"
         android:layout_width="0dp"
@@ -85,10 +130,10 @@
         app:layout_constraintGuide_percent="0.925"
         />
 
-    <TextView
-        android:id="@+id/lang"
+    <ImageButton
+        android:id="@+id/back2"
 
-        android:layout_width="0dp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
 
         android:layout_alignParentStart="true"
@@ -96,18 +141,19 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="語言"
-        android:textAppearance="@style/title"
+        android:textAppearance="@style/text"
+        android:background="@drawable/back2"
 
-        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
+        app:layout_constraintStart_toStartOf="@id/guideline_titleStart"
+        app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.225"
+        app:layout_constraintVertical_bias="0.9"
         />
 
     <TextView
-        android:id="@+id/lang2"
+        android:id="@+id/back2_instru"
 
         android:layout_width="0dp"
         android:layout_height="50dp"
@@ -117,101 +163,16 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Language"
-        android:textAppearance="@style/subtitle"
+        android:text="Back to Home screen after 1 min."
+        android:textAppearance="@style/text2"
+        android:gravity="center_horizontal|top"
 
-        app:layout_constraintStart_toStartOf="@+id/lang"
-        app:layout_constraintTop_toBottomOf="@+id/lang"
-        />
-
-    <ImageView
-        android:id="@+id/line"
-
-        android:layout_width="200dp"
-        android:layout_height="7dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        android:background="@drawable/line"
-
-        app:layout_constraintStart_toStartOf="@+id/lang"
-        app:layout_constraintTop_toBottomOf="@+id/lang2"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
+        app:layout_constraintStart_toStartOf="@id/guideline_titleStart"
+        app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="0.025"
-        />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_btnTop"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4"
-        />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_btnBottom"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6"
-        />
-
-    <Button
-        android:id="@+id/cht"
-
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="h,1:1"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        android:backgroundTint="#D3AC9C"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:text="中文"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        app:cornerRadius="125dp"
-
-        app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline_btnTop"
-        app:layout_constraintEnd_toStartOf="@+id/eng"
-        />
-
-    <Button
-        android:id="@+id/eng"
-
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="h,1:1"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        android:backgroundTint="#D3AC9C"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:text="English"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        app:cornerRadius="125dp"
-
-        app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline_btnTop"
-        app:layout_constraintStart_toEndOf="@+id/cht"
+        app:layout_constraintVertical_bias="0.95"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

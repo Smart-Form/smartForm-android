@@ -7,6 +7,25 @@
     tools:context=".address">
 
     <ImageView
+        android:id="@+id/bg"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        android:background="@android:color/white"
+        />
+
+    <ImageView
         android:id="@+id/bg2"
 
         android:layout_width="0dp"
@@ -45,7 +64,7 @@
         android:id="@+id/instruc"
 
         android:layout_width="0dp"
-        android:layout_height="225dp"
+        android:layout_height="100dp"
 
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -53,7 +72,8 @@
         android:layout_alignParentBottom="true"
 
         android:text="Put your Address"
-        android:textAppearance="@style/title2"
+        android:autoSizeTextType="uniform"
+        android:textColor="#FFFFFF"
         android:gravity="center_horizontal|top"
 
         app:layout_constraintTop_toTopOf="parent"
@@ -65,7 +85,7 @@
         />
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/idCard"
+        android:id="@+id/address"
 
         android:layout_width="0dp"
         android:layout_height="0dp"

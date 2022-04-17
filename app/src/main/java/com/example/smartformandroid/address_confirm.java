@@ -31,7 +31,7 @@ public class address_confirm extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(address_confirm.this, data_allow.class));
+                startActivity(new Intent(address_confirm.this, select.class));
             }
         });
 

@@ -4,12 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
-public class select extends AppCompatActivity {
+public class bye extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,28 +25,24 @@ public class select extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        setContentView(R.layout.activity_select);
+        setContentView(R.layout.activity_bye);
 
-        ImageButton btn = (ImageButton)findViewById(R.id.banner);
+        ImageButton btn = (ImageButton)findViewById(R.id.back2);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(select.this, bye.class));
-            }
-        });
-        ImageButton btn2 = (ImageButton)findViewById(R.id.banner2);
-        btn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(select.this, bye.class));
-            }
-        });
-        ImageButton btn3 = (ImageButton)findViewById(R.id.banner3);
-        btn3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(select.this, bye.class));
+                startActivity(new Intent(bye.this, language.class));
             }
         });
     }
+
+    CountDownTimer countDownTimer = new CountDownTimer(60000, 1000) {
+        public void onTick(long millisUntilFinished) {
+            //TODO: Do something every second
+        }
+        public void onFinish() {
+            //finish();
+            startActivity(new Intent(bye.this, language.class));
+        }
+    }.start();
 }
