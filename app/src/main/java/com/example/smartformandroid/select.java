@@ -24,21 +24,21 @@ public class select extends AppCompatActivity {
         ImageButton btn2 = (ImageButton)findViewById(R.id.banner);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(select.this, MainActivity.class));
             }
         });
         ImageButton btn3 = (ImageButton)findViewById(R.id.banner2);
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(select.this, MainActivity.class));
             }
         });
         ImageButton btn4 = (ImageButton)findViewById(R.id.banner3);
         btn4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(select.this, MainActivity.class));
             }
         });

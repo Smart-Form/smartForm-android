@@ -17,14 +17,14 @@ public class type extends AppCompatActivity {
         ImageButton btn = (ImageButton)findViewById(R.id.gov_wel);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(type.this, select.class));
             }
         });
         ImageButton btn2 = (ImageButton)findViewById(R.id.oth_wel);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(type.this, select.class));
             }
         });

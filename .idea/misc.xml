@@ -6,22 +6,30 @@
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1925" />
         <entry key="app/src/main/res/drawable/btn.xml" value="0.219" />
         <entry key="app/src/main/res/drawable/btn_shape.xml" value="0.163" />
+        <entry key="app/src/main/res/drawable/ic_baseline_undo_24.xml" value="0.1645" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1925" />
         <entry key="app/src/main/res/drawable/image6.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/image_6.xml" value="0.163" />
         <entry key="app/src/main/res/drawable/shadow.xml" value="0.1635" />
         <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.11283003300330033" />
+        <entry key="app/src/main/res/layout-sw700dp/activity_language.xml" value="0.11511817440912796" />
+        <entry key="app/src/main/res/layout-w720dp/activity_address_confirm.xml" value="0.11283003300330033" />
         <entry key="app/src/main/res/layout/activity_2.xml" value="0.24592391304347827" />
         <entry key="app/src/main/res/layout/activity_3.xml" value="0.1387126019945603" />
         <entry key="app/src/main/res/layout/activity_address.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_address_confirm.xml" value="0.11283003300330033" />
         <entry key="app/src/main/res/layout/activity_data_allow.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_fullscreen.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_id_card.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_id_card_confirm.xml" value="0.11283003300330033" />
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.11707000732421877" />
         <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24155622060709706" />
         <entry key="app/src/main/res/layout/activity_select.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.11065943992773261" />
         <entry key="app/src/main/res/layout/activity_type.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/content_main.xml" value="0.24155622060709706" />
         <entry key="app/src/main/res/layout/id_card.xml" value="0.1598037719726563" />
         <entry key="app/src/main/res/layout/language.xml" value="0.7538461538461538" />
         <entry key="app/src/main/res/layout/styles.xml" value="0.15020263424518743" />

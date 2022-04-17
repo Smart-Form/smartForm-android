@@ -1,18 +1,18 @@
 package com.example.smartformandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer; // timeoutIfDoNotTouch
-import android.view.MotionEvent; // timeoutIfDoNotTouch
+import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.airbnb.lottie.LottieAnimationView;
 
-public class id_card extends AppCompatActivity {
+public class address extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,25 +27,24 @@ public class id_card extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        setContentView(R.layout.activity_id_card);
+        setContentView(R.layout.activity_address);
 
-        LottieAnimationView btn = (LottieAnimationView)findViewById(R.id.loading);
+        LottieAnimationView btn = (LottieAnimationView) findViewById(R.id.loading);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(id_card.this, id_card_confirm.class));
+                startActivity(new Intent(address.this, address_confirm.class));
             }
         });
     }
 
-    // timeoutIfDoNotTouch 2
     CountDownTimer countDownTimer = new CountDownTimer(300000, 1000) {
         public void onTick(long millisUntilFinished) {
             //TODO: Do something every second
         }
         public void onFinish() {
             //finish();
-            startActivity(new Intent(id_card.this, language.class));
+            startActivity(new Intent(address.this, language.class));
         }
     }.start();
     @Override
@@ -56,5 +55,4 @@ public class id_card extends AppCompatActivity {
         }
         return super.onTouchEvent(event);
     }
-    // timeoutIfDoNotTouch 2 end
 }

@@ -24,7 +24,7 @@ public class data_allow extends AppCompatActivity {
         ImageButton btn2 = (ImageButton)findViewById(R.id.no);
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
+            public void onClick(View v) {
                 startActivity(new Intent(data_allow.this, type.class));
             }
         });

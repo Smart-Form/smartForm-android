@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="smart_form">
         <item name="android:textSize">
             25sp
@@ -11,12 +12,13 @@
 
     <style name="title">
         <item name="android:textSize">
-            75sp
+            65sp
         </item>
         <item name="android:textColor">
             #FFFFFF
         </item>
     </style>
+
     <style name="title2">
         <item name="android:textSize">
             85sp
@@ -25,6 +27,7 @@
             #FFFFFF
         </item>
     </style>
+
     <style name="title3">
         <item name="android:textSize">
             60sp
@@ -33,6 +36,7 @@
             #87624A
         </item>
     </style>
+
     <style name="title4">
         <item name="android:textSize">
             35sp

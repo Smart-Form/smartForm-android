@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".language">
 
     <ImageView
         android:id="@+id/bg"
@@ -78,40 +78,6 @@
         app:layout_constraintGuide_percent="0.075"
         />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_titleEnd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.925"
-        />
-
-    <TextView
-        android:id="@+id/back"
-
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        android:text=" ◀ 重選語言 Reselect Language"
-        android:foreground="?android:attr/selectableItemBackground"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
-        android:textColor="#87624A"
-        android:clickable="true"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintVertical_bias="0.01"
-        />
-
     <TextView
         android:id="@+id/lang"
 
@@ -123,7 +89,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Click to start"
+        android:text="語言"
         android:textAppearance="@style/title"
 
         app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
@@ -131,6 +97,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintVertical_bias="0.2"
+        />
+
+    <TextView
+        android:id="@+id/lang2"
+
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text="Language"
+        android:textAppearance="@style/subtitle"
+
+        app:layout_constraintStart_toStartOf="@+id/lang"
+        app:layout_constraintTop_toBottomOf="@+id/lang"
         />
 
     <ImageView
@@ -147,82 +131,80 @@
         android:background="@drawable/line"
 
         app:layout_constraintStart_toStartOf="@+id/lang"
-        app:layout_constraintTop_toBottomOf="@+id/lang"
+        app:layout_constraintTop_toBottomOf="@+id/lang2"
         app:layout_constraintBottom_toBottomOf="parent"
 
         app:layout_constraintVertical_bias="0.025"
         />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_btnTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_btnBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
+        />
+
     <Button
-        android:id="@+id/btn"
-        android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:id="@+id/cht"
 
-        android:text="▶"
-        android:textColor="#FFFFFF"
-        android:autoSizeTextType="uniform"
-        android:maxLines="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="h,1:1"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
         android:backgroundTint="#D3AC9C"
-        app:cornerRadius="25dp"
         android:foreground="?android:attr/selectableItemBackground"
+        android:text="中文"
+        android:textAppearance="@style/title"
+        android:maxLines="1"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="125dp"
 
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-
-        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_btnTop"
+        app:layout_constraintEnd_toStartOf="@+id/eng"
         />
 
-    <ImageView
-        android:id="@+id/path"
+    <Button
+        android:id="@+id/eng"
 
         android:layout_width="0dp"
-        android:layout_height="175dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="h,1:1"
 
         android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:adjustViewBounds="true"
+        android:backgroundTint="#D3AC9C"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="English"
+        android:textAppearance="@style/title"
+        android:maxLines="1"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="125dp"
 
-        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintVertical_bias="0.875"
-
-        android:background="@drawable/path"
-        />
-
-    <TextView
-        android:id="@+id/one_for_all"
-
-        android:layout_width="0dp"
-        android:layout_height="150dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-
-        android:text="@string/one_for_all"
-        android:textAppearance="@style/title3"
-        android:gravity="center_horizontal|top"
-
-        android:textStyle="bold"
-
-        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
-        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-
-        app:layout_constraintVertical_bias="0.865"
+        app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline_btnTop"
+        app:layout_constraintStart_toEndOf="@+id/cht"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
