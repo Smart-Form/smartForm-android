@@ -13,15 +13,4 @@
         loading
     </string>
 
-    <string name="instruc4">
-        Government\nWelfare
-    </string>
-
-    <string name="form">
-        Senior\nCitizen\nCard
-    </string>
-    <string name="form2">
-        Old Age \nAllowance
-    </string>
-
 </resources>

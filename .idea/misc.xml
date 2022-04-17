@@ -15,6 +15,7 @@
         <entry key="app/src/main/res/drawable/stroke.xml" value="0.1645" />
         <entry key="app/src/main/res/layout-sw600dp/activity_main.xml" value="0.11283003300330033" />
         <entry key="app/src/main/res/layout-sw700dp/activity_address.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout-sw700dp/activity_bye.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout-sw700dp/activity_id_card.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout-sw700dp/activity_id_card_confirm.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout-sw700dp/activity_language.xml" value="0.11511817440912796" />
@@ -33,7 +34,7 @@
         <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24155622060709706" />
-        <entry key="app/src/main/res/layout/activity_select.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_select.xml" value="0.12740936279296877" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.11065943992773261" />
         <entry key="app/src/main/res/layout/activity_type.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.24155622060709706" />

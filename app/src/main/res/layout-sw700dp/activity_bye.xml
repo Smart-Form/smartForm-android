@@ -72,7 +72,7 @@
 
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintDimensionRatio="w,1:2.5"
+        app:layout_constraintDimensionRatio="w,1:2"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -92,6 +92,7 @@
 
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="h,1:0.55"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -110,8 +111,6 @@
         app:layout_constraintEnd_toEndOf="@+id/circle"
         app:layout_constraintStart_toStartOf="@+id/circle"
         app:layout_constraintTop_toTopOf="@+id/circle"
-
-        app:layout_constraintHeight_percent="0.25"
         />
 
     <androidx.constraintlayout.widget.Guideline
