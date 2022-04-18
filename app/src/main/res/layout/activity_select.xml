@@ -4,26 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".select">
-
-    <ImageView
-        android:id="@+id/bg"
-
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-
-        android:background="@android:color/white"
-        />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_titleStart"
@@ -70,17 +52,18 @@
     <Button
         android:id="@+id/gov_form"
 
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
+        app:layout_constraintDimensionRatio="w,4.25:1"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintBottom_toBottomOf="parent"
 
         android:text="Government"
         android:textColor="#FFFFFF"
@@ -92,23 +75,24 @@
         android:textAllCaps="false"
         android:textStyle="bold"
 
-        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintVertical_bias="0.0125"
         />
 
     <Button
         android:id="@+id/com_form"
 
-        android:layout_width="300dp"
+        android:layout_width="0dp"
         android:layout_height="75dp"
+        app:layout_constraintDimensionRatio="w,4.25:1"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"
+        app:layout_constraintBottom_toBottomOf="parent"
 
         android:text="Company"
         android:textColor="#000000"
@@ -120,14 +104,14 @@
         android:textAllCaps="false"
         android:textStyle="bold"
 
-        app:layout_constraintVertical_bias="0.08"
+        app:layout_constraintVertical_bias="0.0125"
         />
 
     <View
         android:id="@+id/view"
 
         android:layout_width="0dp"
-        android:layout_height="175dp"
+        android:layout_height="150dp"
 
         android:background="@android:color/white"
 
@@ -141,7 +125,7 @@
         android:id="@+id/confirm_button"
 
         android:layout_width="0dp"
-        android:layout_height="125dp"
+        android:layout_height="100dp"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -168,13 +152,15 @@
         android:id="@+id/scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="175dp"
         android:fillViewport="true"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp">
+            >
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline_titleStart2"
@@ -190,56 +176,39 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.925" />
 
-            <ImageButton
-                android:id="@+id/banner"
-
+            <FrameLayout
+                android:id="@+id/frameLayout"
                 android:layout_width="0dp"
-                android:layout_height="400dp"
-
-                android:background="@drawable/banner"
-
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
                 app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd2"
                 app:layout_constraintStart_toStartOf="@id/guideline_titleStart2"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
 
-            <ImageButton
-                android:id="@+id/banner2"
+                    android:background="@drawable/banner"
+                    />
+            </FrameLayout>
 
+            <FrameLayout
+                android:id="@+id/frameLayout2"
                 android:layout_width="0dp"
-                android:layout_height="400dp"
-
-                android:layout_marginTop="40dp"
-                android:background="@drawable/banner2"
-
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
                 app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd2"
                 app:layout_constraintStart_toStartOf="@id/guideline_titleStart2"
-                app:layout_constraintTop_toBottomOf="@id/banner" />
+                app:layout_constraintTop_toBottomOf="@id/frameLayout"
+                >
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
 
-            <ImageButton
-                android:id="@+id/banner3"
-
-                android:layout_width="0dp"
-                android:layout_height="400dp"
-
-                android:layout_marginTop="40dp"
-                android:background="@drawable/banner"
-
-                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd2"
-                app:layout_constraintStart_toStartOf="@id/guideline_titleStart2"
-                app:layout_constraintTop_toBottomOf="@id/banner2" />
-
-            <ImageButton
-                android:id="@+id/banner4"
-
-                android:layout_width="0dp"
-                android:layout_height="400dp"
-
-                android:layout_marginTop="40dp"
-                android:background="@drawable/banner2"
-
-                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd2"
-                app:layout_constraintStart_toStartOf="@id/guideline_titleStart2"
-                app:layout_constraintTop_toBottomOf="@id/banner3" />
+                    android:background="@drawable/banner2"
+                    />
+            </FrameLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
