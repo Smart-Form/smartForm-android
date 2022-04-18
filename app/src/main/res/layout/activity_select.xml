@@ -32,9 +32,6 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:drawableEnd="@drawable/ic_baseline_account_box_24"
-        android:drawableTint="#D3AC9C"
-
         android:text="Select Your Welfare"
         android:foreground="?android:attr/selectableItemBackground"
         android:autoSizeTextType="uniform"
@@ -49,12 +46,28 @@
         app:layout_constraintVertical_bias="0.025"
         />
 
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:src="@drawable/ic_baseline_account_box_24"
+        android:tint="#D3AC9C"
+
+        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
+        app:layout_constraintTop_toTopOf="@id/back"
+        />
+
     <Button
         android:id="@+id/gov_form"
 
         android:layout_width="0dp"
         android:layout_height="75dp"
-        app:layout_constraintDimensionRatio="w,4.25:1"
+        app:layout_constraintWidth_percent="0.4"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -83,7 +96,7 @@
 
         android:layout_width="0dp"
         android:layout_height="75dp"
-        app:layout_constraintDimensionRatio="w,4.25:1"
+        app:layout_constraintWidth_percent="0.4"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -149,67 +162,361 @@
         />
 
     <ScrollView
-        android:id="@+id/scroll_view"
+        android:id="@+id/scroll_view_gov"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="175dp"
+        android:layout_marginBottom="150dp"
         android:fillViewport="true"
+        android:visibility="visible"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout"
+            android:id="@+id/constraintLayout_gov"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             >
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_titleStart2"
+                android:id="@+id/guideline_titleStart_gov"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.075" />
 
             <androidx.constraintlayout.widget.Guideline
-                android:id="@+id/guideline_titleEnd2"
+                android:id="@+id/guideline_titleEnd_gov"
                 android:layout_width="0dp"
                 android:layout_height="0dp"
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.925" />
 
-            <FrameLayout
-                android:id="@+id/frameLayout"
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frameLayout_gov"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd2"
-                app:layout_constraintStart_toStartOf="@id/guideline_titleStart2"
+                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
+                app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
                 app:layout_constraintTop_toTopOf="parent"
+                app:cardCornerRadius="25dp"
                 >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
                 <ImageButton
                     android:layout_width="match_parent"
                     android:layout_height="400dp"
 
                     android:background="@drawable/banner"
-                    />
-            </FrameLayout>
 
-            <FrameLayout
-                android:id="@+id/frameLayout2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+
+                    android:background="#CCCCCC99"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+
+                    android:layout_marginStart="25dp"
+
+                    android:text="Old Age Allowance"
+                    android:maxLines="1"
+                    android:textAppearance="@style/title4"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="left|center"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+                <CheckBox
+                    android:layout_width="125dp"
+                    android:layout_height="125dp"
+                    android:button="@null"
+                    android:background="?android:attr/listChoiceIndicatorSingle"
+                    android:layout_marginTop="275dp"
+                    android:backgroundTint="#FFFFFF"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frameLayout_gov2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
-                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd2"
-                app:layout_constraintStart_toStartOf="@id/guideline_titleStart2"
-                app:layout_constraintTop_toBottomOf="@id/frameLayout"
+                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
+                app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
+                app:layout_constraintTop_toBottomOf="@id/frameLayout_gov"
+                app:cardCornerRadius="25dp"
                 >
-                <ImageButton
+                <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
 
-                    android:background="@drawable/banner2"
-                    />
-            </FrameLayout>
+                        android:background="@drawable/banner2"
 
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:background="#CCCCCC99"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:layout_marginStart="25dp"
+
+                        android:text="Senior Citizen Card"
+                        android:maxLines="1"
+                        android:textAppearance="@style/title4"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="left|center"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <CheckBox
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:button="@null"
+                        android:background="?android:attr/listChoiceIndicatorSingle"
+                        android:layout_marginTop="275dp"
+                        android:backgroundTint="#FFFFFF"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frameLayout_gov3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
+                app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
+                app:layout_constraintTop_toBottomOf="@id/frameLayout_gov2"
+                app:cardCornerRadius="25dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+
+                        android:background="@drawable/banner"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:background="#CCCCCC99"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:layout_marginStart="25dp"
+
+                        android:text="Old Age Allowance"
+                        android:maxLines="1"
+                        android:textAppearance="@style/title4"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="left|center"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <CheckBox
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:button="@null"
+                        android:background="?android:attr/listChoiceIndicatorSingle"
+                        android:layout_marginTop="275dp"
+                        android:backgroundTint="#FFFFFF"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frameLayout_gov4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
+                app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
+                app:layout_constraintTop_toBottomOf="@id/frameLayout_gov3"
+                app:cardCornerRadius="25dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+
+                        android:background="@drawable/banner2"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:background="#CCCCCC99"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:layout_marginStart="25dp"
+
+                        android:text="Senior Citizen Card"
+                        android:maxLines="1"
+                        android:textAppearance="@style/title4"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="left|center"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <CheckBox
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:button="@null"
+                        android:background="?android:attr/listChoiceIndicatorSingle"
+                        android:layout_marginTop="275dp"
+                        android:backgroundTint="#FFFFFF"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+
+    <ScrollView
+        android:id="@+id/scroll_view_com"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="175dp"
+        android:layout_marginBottom="150dp"
+        android:fillViewport="true"
+        android:visibility="invisible"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout_com"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_titleStart_com"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.075" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline_titleEnd_com"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.925" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/frameLayout_com"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_com"
+                app:layout_constraintStart_toStartOf="@id/guideline_titleStart_com"
+                app:layout_constraintTop_toTopOf="parent"
+                app:cardCornerRadius="25dp"
+                >
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+
+                        android:background="@drawable/banner"
+
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:background="#CCCCCC99"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+
+                        android:layout_marginStart="25dp"
+
+                        android:text="Old Age Allowance"
+                        android:maxLines="1"
+                        android:textAppearance="@style/title4"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="left|center"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        />
+                    <CheckBox
+                        android:layout_width="125dp"
+                        android:layout_height="125dp"
+                        android:button="@null"
+                        android:background="?android:attr/listChoiceIndicatorSingle"
+                        android:layout_marginTop="275dp"
+                        android:backgroundTint="#FFFFFF"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

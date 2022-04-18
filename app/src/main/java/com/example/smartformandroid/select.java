@@ -1,13 +1,15 @@
 package com.example.smartformandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageButton;
+import android.widget.Button;
+import android.widget.ScrollView;
 
 public class select extends AppCompatActivity {
 
@@ -26,25 +28,40 @@ public class select extends AppCompatActivity {
 
         setContentView(R.layout.activity_select);
 
-        ImageButton btn = (ImageButton)findViewById(R.id.banner);
+        Button btn = (Button) findViewById(R.id.confirm_button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(select.this, bye.class));
             }
         });
-        ImageButton btn2 = (ImageButton)findViewById(R.id.banner2);
-        btn2.setOnClickListener(new View.OnClickListener() {
+
+        Button btn_gov = (Button) findViewById(R.id.gov_form);
+        Button btn_com = (Button) findViewById(R.id.com_form);
+        ScrollView gov_form = (ScrollView) findViewById(R.id.scroll_view_gov);
+        ScrollView com_form = (ScrollView) findViewById(R.id.scroll_view_com);
+        btn_gov.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(select.this, bye.class));
+                btn_gov.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.secondaryColor));
+                btn_gov.setTextColor(ContextCompat.getColorStateList(select.this, R.color.primaryTextColor));
+                btn_com.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.disableColor));
+                btn_com.setTextColor(ContextCompat.getColorStateList(select.this, R.color.secondaryTextColor));
+
+                gov_form.setVisibility(View.VISIBLE);
+                com_form.setVisibility(View.INVISIBLE);
             }
         });
-        ImageButton btn3 = (ImageButton)findViewById(R.id.banner3);
-        btn3.setOnClickListener(new View.OnClickListener() {
+        btn_com.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(select.this, bye.class));
+                btn_gov.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.disableColor));
+                btn_gov.setTextColor(ContextCompat.getColorStateList(select.this, R.color.secondaryTextColor));
+                btn_com.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.secondaryColor));
+                btn_com.setTextColor(ContextCompat.getColorStateList(select.this, R.color.primaryTextColor));
+
+                gov_form.setVisibility(View.INVISIBLE);
+                com_form.setVisibility(View.VISIBLE);
             }
         });
     }
