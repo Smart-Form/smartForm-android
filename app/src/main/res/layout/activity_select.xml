@@ -192,7 +192,7 @@
                 app:layout_constraintGuide_percent="0.925" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/frameLayout_gov"
+                android:id="@+id/cardView_gov"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
@@ -251,13 +251,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/frameLayout_gov2"
+                android:id="@+id/cardView_gov2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
                 app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
-                app:layout_constraintTop_toBottomOf="@id/frameLayout_gov"
+                app:layout_constraintTop_toBottomOf="@id/cardView_gov"
                 app:cardCornerRadius="25dp"
                 >
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -310,19 +310,20 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/frameLayout_gov3"
+                android:id="@+id/cardView_gov3"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
                 app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
-                app:layout_constraintTop_toBottomOf="@id/frameLayout_gov2"
+                app:layout_constraintTop_toBottomOf="@id/cardView_gov2"
                 app:cardCornerRadius="25dp"
                 >
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     >
+
                     <ImageButton
                         android:layout_width="match_parent"
                         android:layout_height="400dp"
@@ -330,7 +331,8 @@
                         android:background="@drawable/banner"
 
                         app:layout_constraintTop_toTopOf="parent"
-                        />
+                        tools:layout_editor_absoluteX="0dp" />
+
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="125dp"
@@ -369,13 +371,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/frameLayout_gov4"
+                android:id="@+id/cardView_gov4"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"
                 app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd_gov"
                 app:layout_constraintStart_toStartOf="@id/guideline_titleStart_gov"
-                app:layout_constraintTop_toBottomOf="@id/frameLayout_gov3"
+                app:layout_constraintTop_toBottomOf="@id/cardView_gov3"
                 app:cardCornerRadius="25dp"
                 >
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -459,7 +461,7 @@
                 app:layout_constraintGuide_percent="0.925" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/frameLayout_com"
+                android:id="@+id/cardView_com"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="25dp"

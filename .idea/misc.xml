@@ -34,6 +34,9 @@
         <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24155622060709706" />
+        <entry key="app/src/main/res/layout/activity_question_mc.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_question_option.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_question_text.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_select.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.11065943992773261" />
         <entry key="app/src/main/res/layout/activity_type.xml" value="0.1" />

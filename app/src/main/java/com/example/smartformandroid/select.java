@@ -32,7 +32,7 @@ public class select extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(select.this, bye.class));
+                startActivity(new Intent(select.this, question_mc.class));
             }
         });
 

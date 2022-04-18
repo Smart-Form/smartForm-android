@@ -11,6 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartformandroid">
         <activity
+            android:name=".question_option"
+            android:exported="false" />
+        <activity
+            android:name=".question_text"
+            android:exported="false" />
+        <activity
+            android:name=".question_mc"
+            android:exported="false" />
+        <activity
             android:name=".bye"
             android:exported="false" />
         <activity
