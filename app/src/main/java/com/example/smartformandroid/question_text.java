@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.LocaleList;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class question_text extends AppCompatActivity {
 
@@ -29,11 +33,16 @@ public class question_text extends AppCompatActivity {
 
         setContentView(R.layout.activity_question_text);
 
+        EditText editText = (EditText) findViewById(R.id.plain_text_input);
+        editText.setImeHintLocales(new LocaleList(new Locale("en", "USA")));
+
         Button btn = (Button) findViewById(R.id.loading);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(question_text.this, bye.class));
+                countDownTimer.cancel();
+                finish();
+                startActivity(new Intent(question_text.this, question_text_cht.class));
             }
         });
 
@@ -41,17 +50,20 @@ public class question_text extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
                 finish();
+                startActivity(new Intent(question_text.this, question_option.class));
             }
         });
     }
 
-    CountDownTimer countDownTimer = new CountDownTimer(1200000, 1000) {
+    CountDownTimer countDownTimer = new CountDownTimer(600000, 1000) {
         public void onTick(long millisUntilFinished) {
             //TODO: Do something every second
         }
         public void onFinish() {
-            //finish();
+            countDownTimer.cancel();
+            finish();
             startActivity(new Intent(question_text.this, language.class));
         }
     }.start();

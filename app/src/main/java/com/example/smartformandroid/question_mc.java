@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class question_mc extends AppCompatActivity {
 
@@ -34,15 +33,9 @@ public class question_mc extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(question_mc.this, question_option.class));
-            }
-        });
-
-        TextView backBtn = (TextView) findViewById(R.id.back);
-        backBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+                countDownTimer.cancel();
                 finish();
+                startActivity(new Intent(question_mc.this, question_option.class));
             }
         });
 
@@ -185,7 +178,8 @@ public class question_mc extends AppCompatActivity {
             //TODO: Do something every second
         }
         public void onFinish() {
-            //finish();
+            countDownTimer.cancel();
+            finish();
             startActivity(new Intent(question_mc.this, language.class));
         }
     }.start();

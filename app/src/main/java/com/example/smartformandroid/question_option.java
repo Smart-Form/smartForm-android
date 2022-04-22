@@ -34,6 +34,8 @@ public class question_option extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
                 startActivity(new Intent(question_option.this, question_text.class));
             }
         });
@@ -42,7 +44,9 @@ public class question_option extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
                 finish();
+                startActivity(new Intent(question_option.this, question_mc.class));
             }
         });
 
@@ -107,7 +111,8 @@ public class question_option extends AppCompatActivity {
             //TODO: Do something every second
         }
         public void onFinish() {
-            //finish();
+            countDownTimer.cancel();
+            finish();
             startActivity(new Intent(question_option.this, language.class));
         }
     }.start();

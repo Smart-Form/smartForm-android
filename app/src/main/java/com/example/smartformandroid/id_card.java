@@ -4,8 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer; // timeoutIfDoNotTouch
-import android.view.MotionEvent; // timeoutIfDoNotTouch
+import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -33,18 +33,20 @@ public class id_card extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
                 startActivity(new Intent(id_card.this, id_card_confirm.class));
             }
         });
     }
 
-    // timeoutIfDoNotTouch 2
-    CountDownTimer countDownTimer = new CountDownTimer(300000, 1000) {
+    CountDownTimer countDownTimer = new CountDownTimer(600000, 1000) {
         public void onTick(long millisUntilFinished) {
             //TODO: Do something every second
         }
         public void onFinish() {
-            //finish();
+            countDownTimer.cancel();
+            finish();
             startActivity(new Intent(id_card.this, language.class));
         }
     }.start();
@@ -56,5 +58,4 @@ public class id_card extends AppCompatActivity {
         }
         return super.onTouchEvent(event);
     }
-    // timeoutIfDoNotTouch 2 end
 }

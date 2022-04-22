@@ -37,6 +37,7 @@
         <entry key="app/src/main/res/layout/activity_question_mc.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_question_option.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_question_text.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_question_text_cht.xml" value="0.11171875" />
         <entry key="app/src/main/res/layout/activity_select.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.11065943992773261" />
         <entry key="app/src/main/res/layout/activity_type.xml" value="0.1" />

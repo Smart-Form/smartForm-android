@@ -2,6 +2,8 @@ package com.example.smartformandroid;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -31,6 +33,8 @@ public class address_confirm extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
                 startActivity(new Intent(address_confirm.this, select.class));
             }
         });
@@ -39,8 +43,29 @@ public class address_confirm extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
                 finish();
+                startActivity(new Intent(address_confirm.this, address.class));
             }
         });
+    }
+
+    CountDownTimer countDownTimer = new CountDownTimer(600000, 1000) {
+        public void onTick(long millisUntilFinished) {
+            //TODO: Do something every second
+        }
+        public void onFinish() {
+            countDownTimer.cancel();
+            finish();
+            startActivity(new Intent(address_confirm.this, language.class));
+        }
+    }.start();
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            countDownTimer.cancel();
+            countDownTimer.start();
+        }
+        return super.onTouchEvent(event);
     }
 }

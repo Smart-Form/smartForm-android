@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent; // buttonOnclickNewIntent
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View; // buttonOnclickNewIntent
 import android.view.Window; // removeTitleBar
 import android.view.WindowManager; // removeTitleBar
@@ -39,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
                 startActivity(new Intent(MainActivity.this, id_card.class));
             }
         });
@@ -49,9 +53,30 @@ public class MainActivity extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
                 finish();
+                startActivity(new Intent(MainActivity.this, id_card.class));
             }
         });
         // backBTN 2 end
+    }
+
+    CountDownTimer countDownTimer = new CountDownTimer(600000, 1000) {
+        public void onTick(long millisUntilFinished) {
+            //TODO: Do something every second
+        }
+        public void onFinish() {
+            countDownTimer.cancel();
+            finish();
+            startActivity(new Intent(MainActivity.this, language.class));
+        }
+    }.start();
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            countDownTimer.cancel();
+            countDownTimer.start();
+        }
+        return super.onTouchEvent(event);
     }
 }

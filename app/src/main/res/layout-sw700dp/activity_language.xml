@@ -97,7 +97,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="語言"
+        android:text="請選擇語言"
         android:textAppearance="@style/title"
 
         app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
@@ -118,7 +118,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Language"
+        android:text="Please Select Language"
         android:textAppearance="@style/subtitle"
 
         app:layout_constraintStart_toStartOf="@+id/lang"
@@ -150,7 +150,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4"
+        app:layout_constraintGuide_percent="0.375"
         />
 
     <androidx.constraintlayout.widget.Guideline
@@ -158,7 +158,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.6"
+        app:layout_constraintGuide_percent="0.625"
         />
 
     <Button
@@ -180,7 +180,7 @@
         android:maxLines="1"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        app:cornerRadius="125dp"
+        app:cornerRadius="175dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
         app:layout_constraintStart_toStartOf="parent"
@@ -207,7 +207,7 @@
         android:maxLines="1"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
-        app:cornerRadius="125dp"
+        app:cornerRadius="175dp"
 
         app:layout_constraintBottom_toBottomOf="@+id/guideline_btnBottom"
         app:layout_constraintEnd_toEndOf="parent"

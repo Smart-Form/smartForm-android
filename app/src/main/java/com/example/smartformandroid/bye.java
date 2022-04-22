@@ -31,6 +31,8 @@ public class bye extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
                 startActivity(new Intent(bye.this, language.class));
             }
         });
@@ -41,7 +43,8 @@ public class bye extends AppCompatActivity {
             //TODO: Do something every second
         }
         public void onFinish() {
-            //finish();
+            countDownTimer.cancel();
+            finish();
             startActivity(new Intent(bye.this, language.class));
         }
     }.start();

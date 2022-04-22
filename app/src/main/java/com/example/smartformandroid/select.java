@@ -5,6 +5,8 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -32,6 +34,8 @@ public class select extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
                 startActivity(new Intent(select.this, question_mc.class));
             }
         });
@@ -64,5 +68,24 @@ public class select extends AppCompatActivity {
                 com_form.setVisibility(View.VISIBLE);
             }
         });
+    }
+
+    CountDownTimer countDownTimer = new CountDownTimer(600000, 1000) {
+        public void onTick(long millisUntilFinished) {
+            //TODO: Do something every second
+        }
+        public void onFinish() {
+            countDownTimer.cancel();
+            finish();
+            startActivity(new Intent(select.this, language.class));
+        }
+    }.start();
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            countDownTimer.cancel();
+            countDownTimer.start();
+        }
+        return super.onTouchEvent(event);
     }
 }
