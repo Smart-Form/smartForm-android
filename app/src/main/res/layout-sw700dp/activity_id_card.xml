@@ -46,7 +46,7 @@
         android:id="@+id/instruc"
 
         android:layout_width="0dp"
-        android:layout_height="225dp"
+        android:layout_height="250dp"
 
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
@@ -54,7 +54,8 @@
         android:layout_alignParentBottom="true"
 
         android:text="Put your ID Card"
-        android:textAppearance="@style/title2"
+        android:autoSizeTextType="uniform"
+        android:textColor="#FFFFFF"
         android:gravity="center_horizontal|top"
 
         app:layout_constraintTop_toTopOf="parent"

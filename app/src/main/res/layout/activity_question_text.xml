@@ -79,7 +79,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Question 3"
+        android:text="Question 4"
         android:textAppearance="@style/title"
         android:maxLines="1"
         android:textStyle="bold"
@@ -105,7 +105,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="3 of 10 Questions"
+        android:text="4 of 10 Questions"
         android:textAppearance="@style/subtitle"
         android:maxLines="1"
         android:textColor="#FFFFFF"
@@ -191,6 +191,7 @@
         android:inputType="text"
         android:gravity="left|top"
         android:textSize="45dp"
+        android:textColor="#000000"
         android:hint="Type your answer here..."
 
         app:layout_constraintBottom_toBottomOf="parent"
@@ -219,10 +220,14 @@
         android:text="Next Question"
         android:textColor="#FFFFFF"
         android:autoSizeTextType="uniform"
+        android:gravity="center_horizontal|center"
         android:maxLines="1"
         android:backgroundTint="#D3AC9C"
         app:cornerRadius="100dp"
         android:foreground="?android:attr/selectableItemBackground"
+
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
 
         app:layout_constraintVertical_bias="0.925"
         />

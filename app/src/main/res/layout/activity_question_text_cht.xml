@@ -191,6 +191,7 @@
                 android:inputType="text"
                 android:gravity="left|top"
                 android:textSize="45dp"
+                android:textColor="#000000"
                 android:hint="請按此手寫輸入你的答案"
 
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -218,11 +219,15 @@
 
         android:text="下一條問題"
         android:textColor="#FFFFFF"
+        android:gravity="center_horizontal|center"
         android:autoSizeTextType="uniform"
         android:maxLines="1"
         android:backgroundTint="#D3AC9C"
         app:cornerRadius="100dp"
         android:foreground="?android:attr/selectableItemBackground"
+
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
 
         app:layout_constraintVertical_bias="0.925"
         />

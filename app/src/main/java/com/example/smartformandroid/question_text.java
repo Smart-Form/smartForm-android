@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.EditText; // changeKeyboardLanguage
 import android.widget.TextView;
 
 import java.util.Locale;
@@ -21,6 +21,8 @@ public class question_text extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -33,8 +35,10 @@ public class question_text extends AppCompatActivity {
 
         setContentView(R.layout.activity_question_text);
 
+        // changeKeyboardLanguage 2
         EditText editText = (EditText) findViewById(R.id.plain_text_input);
         editText.setImeHintLocales(new LocaleList(new Locale("en", "USA")));
+        // changeKeyboardLanguage 2 end
 
         Button btn = (Button) findViewById(R.id.loading);
         btn.setOnClickListener(new View.OnClickListener() {

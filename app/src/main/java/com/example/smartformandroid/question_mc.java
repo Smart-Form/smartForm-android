@@ -11,12 +11,15 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class question_mc extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
@@ -36,6 +39,16 @@ public class question_mc extends AppCompatActivity {
                 countDownTimer.cancel();
                 finish();
                 startActivity(new Intent(question_mc.this, question_option.class));
+            }
+        });
+
+        TextView backBtn = (TextView) findViewById(R.id.back);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                countDownTimer.cancel();
+                finish();
+                startActivity(new Intent(question_mc.this, question_binary.class));
             }
         });
 

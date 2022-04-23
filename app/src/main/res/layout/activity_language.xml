@@ -44,7 +44,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
 
-        app:layout_constraintVertical_bias="0.075"
+        app:layout_constraintVertical_bias="0.05"
         app:layout_constraintHorizontal_bias="0.855"
         />
 
@@ -115,6 +115,7 @@
         android:layout_alignParentBottom="true"
 
         android:backgroundTint="#D3AC9C"
+        android:gravity="center_horizontal|center"
         android:foreground="?android:attr/selectableItemBackground"
         android:text="中文"
         android:autoSizeTextType="uniform"
@@ -142,6 +143,7 @@
         android:layout_alignParentBottom="true"
 
         android:backgroundTint="#D3AC9C"
+        android:gravity="center_horizontal|center"
         android:foreground="?android:attr/selectableItemBackground"
         android:text="ENG"
         android:autoSizeTextType="uniform"

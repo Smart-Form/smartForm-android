@@ -72,14 +72,14 @@
         android:id="@+id/instruc"
 
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="200dp"
 
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Put your ID Card"
+        android:text="Please Check your ID Card"
         android:autoSizeTextType="uniform"
         android:textColor="#FFFFFF"
         android:gravity="center_horizontal|top"
@@ -156,12 +156,16 @@
         app:layout_constraintTop_toTopOf="parent"
 
         android:text="CONFIRM"
+        android:gravity="center_horizontal|center"
         android:textColor="#FFFFFF"
         android:autoSizeTextType="uniform"
         android:maxLines="1"
         android:backgroundTint="#D3AC9C"
         app:cornerRadius="100dp"
         android:foreground="?android:attr/selectableItemBackground"
+
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
 
         app:layout_constraintVertical_bias="0.925"
         />

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".question_option">
+    tools:context=".question_binary">
 
     <ImageView
         android:id="@+id/bg2"
@@ -24,22 +24,6 @@
         app:layout_constraintStart_toStartOf="parent"
 
         android:background="@drawable/bg2"
-        />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_titleStart"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.075"
-        />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline_titleEnd"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.925"
         />
 
     <TextView
@@ -68,8 +52,24 @@
         app:layout_constraintVertical_bias="0.01"
         />
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleStart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.075"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_titleEnd"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.925"
+        />
+
     <TextView
-        android:id="@+id/question_option_title"
+        android:id="@+id/question_binary_title"
 
         android:layout_width="0dp"
         android:layout_height="100dp"
@@ -79,7 +79,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Question 3"
+        android:text="Question 1"
         android:textAppearance="@style/title"
         android:maxLines="1"
         android:textStyle="bold"
@@ -95,7 +95,7 @@
         />
 
     <TextView
-        android:id="@+id/question_option_subtitle"
+        android:id="@+id/question_binary_subtitle"
 
         android:layout_width="0dp"
         android:layout_height="75dp"
@@ -105,19 +105,19 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="3 of 10 Questions"
+        android:text="1 of 10 Questions"
         android:textAppearance="@style/subtitle"
         android:maxLines="1"
         android:textColor="#FFFFFF"
         android:gravity="left|top"
 
-        app:layout_constraintTop_toBottomOf="@id/question_option_title"
+        app:layout_constraintTop_toBottomOf="@id/question_binary_title"
         app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
         app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
         />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView_question_mc"
+        android:id="@+id/cardView_question_binary"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
@@ -151,7 +151,7 @@
                 />
 
             <TextView
-                android:id="@+id/question_option_question"
+                android:id="@+id/question_binary_question"
 
                 android:layout_width="0dp"
                 android:layout_height="125dp"
@@ -177,7 +177,7 @@
                 />
 
             <Button
-                android:id="@+id/answer_option0"
+                android:id="@+id/answer_binary0"
                 android:visibility="visible"
 
                 android:layout_width="0dp"
@@ -190,10 +190,10 @@
                 android:layout_alignParentBottom="true"
 
                 android:layout_marginTop="30dp"
-                app:layout_constraintStart_toStartOf="@id/question_option_question"
-                app:layout_constraintTop_toBottomOf="@id/question_option_question"
+                app:layout_constraintStart_toStartOf="@id/question_binary_question"
+                app:layout_constraintTop_toBottomOf="@id/question_binary_question"
 
-                android:text="A"
+                android:text="Yes"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"
@@ -208,7 +208,7 @@
                 />
 
             <Button
-                android:id="@+id/answer_option1"
+                android:id="@+id/answer_binary1"
                 android:visibility="visible"
 
                 android:layout_width="0dp"
@@ -221,134 +221,10 @@
                 android:layout_alignParentBottom="true"
 
                 android:layout_marginTop="30dp"
-                app:layout_constraintEnd_toEndOf="@id/question_option_question"
-                app:layout_constraintTop_toBottomOf="@id/question_option_question"
+                app:layout_constraintEnd_toEndOf="@id/question_binary_question"
+                app:layout_constraintTop_toBottomOf="@id/question_binary_question"
 
-                android:text="B"
-                android:textColor="#000000"
-                android:textAppearance="@style/title4"
-                android:maxLines="3"
-                android:backgroundTint="#CCCCCC"
-                app:cornerRadius="100dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-
-                app:strokeColor="@android:color/white"
-                app:strokeWidth="2dp"
-                />
-
-            <Button
-                android:id="@+id/answer_option2"
-                android:visibility="visible"
-
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                app:layout_constraintWidth_percent="0.45"
-
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-
-                android:layout_marginTop="185dp"
-                app:layout_constraintStart_toStartOf="@id/question_option_question"
-                app:layout_constraintTop_toBottomOf="@id/question_option_question"
-
-                android:text="C"
-                android:textColor="#000000"
-                android:textAppearance="@style/title4"
-                android:maxLines="3"
-                android:backgroundTint="#CCCCCC"
-                app:cornerRadius="100dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-
-                app:strokeColor="@android:color/white"
-                app:strokeWidth="2dp"
-                />
-
-            <Button
-                android:id="@+id/answer_option3"
-                android:visibility="visible"
-
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                app:layout_constraintWidth_percent="0.45"
-
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-
-                android:layout_marginTop="185dp"
-                app:layout_constraintEnd_toEndOf="@id/question_option_question"
-                app:layout_constraintTop_toBottomOf="@id/question_option_question"
-
-                android:text="D"
-                android:textColor="#000000"
-                android:textAppearance="@style/title4"
-                android:maxLines="3"
-                android:backgroundTint="#CCCCCC"
-                app:cornerRadius="100dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-
-                app:strokeColor="@android:color/white"
-                app:strokeWidth="2dp"
-                />
-
-            <Button
-                android:id="@+id/answer_option4"
-                android:visibility="visible"
-
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                app:layout_constraintWidth_percent="0.45"
-
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-
-                android:layout_marginTop="340dp"
-                app:layout_constraintStart_toStartOf="@id/question_option_question"
-                app:layout_constraintTop_toBottomOf="@id/question_option_question"
-
-                android:text="E"
-                android:textColor="#000000"
-                android:textAppearance="@style/title4"
-                android:maxLines="3"
-                android:backgroundTint="#CCCCCC"
-                app:cornerRadius="100dp"
-                android:foreground="?android:attr/selectableItemBackground"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-
-                app:strokeColor="@android:color/white"
-                app:strokeWidth="2dp"
-                />
-
-            <Button
-                android:id="@+id/answer_option5"
-                android:visibility="visible"
-
-                android:layout_width="0dp"
-                android:layout_height="125dp"
-                app:layout_constraintWidth_percent="0.45"
-
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-
-                android:layout_marginTop="340dp"
-                app:layout_constraintEnd_toEndOf="@id/question_option_question"
-                app:layout_constraintTop_toBottomOf="@id/question_option_question"
-
-                android:text="F"
+                android:text="No"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"
@@ -381,8 +257,8 @@
         app:layout_constraintTop_toTopOf="parent"
 
         android:text="Next Question"
-        android:textColor="#FFFFFF"
         android:gravity="center_horizontal|center"
+        android:textColor="#FFFFFF"
         android:autoSizeTextType="uniform"
         android:maxLines="1"
         android:backgroundTint="#D3AC9C"

@@ -84,8 +84,8 @@
 
         android:text="Gov"
         android:gravity="center_horizontal|center"
-        android:autoSizeTextType="uniform"
         android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
         android:maxLines="1"
         android:backgroundTint="#D3AC9C"
         app:cornerRadius="100dp"
@@ -232,15 +232,14 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     />
                 <TextView
-                    android:layout_width="0dp"
+                    android:layout_width="match_parent"
                     android:layout_height="125dp"
-                    app:layout_constraintWidth_percent="0.65"
 
-                    android:paddingStart="25dp"
+                    android:layout_marginStart="25dp"
 
                     android:text="Senior Citizen Card"
                     android:maxLines="1"
-                    android:autoSizeTextType="uniform"
+                    android:textAppearance="@style/title4"
                     android:textColor="#000000"
                     android:textStyle="bold"
                     android:gravity="left|center"
@@ -292,15 +291,14 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="125dp"
-                        app:layout_constraintWidth_percent="0.65"
 
-                        android:paddingStart="25dp"
+                        android:layout_marginStart="25dp"
 
                         android:text="Old Age Allowance"
                         android:maxLines="1"
-                        android:autoSizeTextType="uniform"
+                        android:textAppearance="@style/title4"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:gravity="left|center"
@@ -354,15 +352,14 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="125dp"
-                        app:layout_constraintWidth_percent="0.65"
 
-                        android:paddingStart="25dp"
+                        android:layout_marginStart="25dp"
 
                         android:text="Senior Citizen Card"
                         android:maxLines="1"
-                        android:autoSizeTextType="uniform"
+                        android:textAppearance="@style/title4"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:gravity="left|center"
@@ -414,15 +411,14 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="125dp"
-                        app:layout_constraintWidth_percent="0.65"
 
-                        android:paddingStart="25dp"
+                        android:layout_marginStart="25dp"
 
                         android:text="Old Age Allowance"
                         android:maxLines="1"
-                        android:autoSizeTextType="uniform"
+                        android:textAppearance="@style/title4"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:gravity="left|center"
@@ -505,15 +501,14 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <TextView
-                        android:layout_width="0dp"
+                        android:layout_width="match_parent"
                         android:layout_height="125dp"
-                        app:layout_constraintWidth_percent="0.65"
 
-                        android:paddingStart="25dp"
+                        android:layout_marginStart="25dp"
 
                         android:text="Old Age Allowance"
                         android:maxLines="1"
-                        android:autoSizeTextType="uniform"
+                        android:textAppearance="@style/title4"
                         android:textColor="#000000"
                         android:textStyle="bold"
                         android:gravity="left|center"

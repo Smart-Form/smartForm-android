@@ -30,7 +30,7 @@
 
     <style name="title4">
         <item name="android:textSize">
-            35sp
+            40sp
         </item>
         <item name="android:textColor">
             #87624A

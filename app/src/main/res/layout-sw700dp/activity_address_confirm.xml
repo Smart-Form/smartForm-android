@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context=".address">
+    tools:context=".address_confirm">
 
     <ImageView
         android:id="@+id/bg2"
@@ -43,19 +43,45 @@
         />
 
     <TextView
+        android:id="@+id/back"
+
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:text=" ◀ Rescan"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:clickable="true"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintVertical_bias="0.01"
+        />
+
+    <TextView
         android:id="@+id/instruc"
 
         android:layout_width="0dp"
-        android:layout_height="125dp"
+        android:layout_height="225dp"
 
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Put your Address"
-        android:autoSizeTextType="uniform"
+        android:text="Please Check your Address"
         android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
         android:gravity="center_horizontal|top"
 
         app:layout_constraintTop_toTopOf="parent"
@@ -63,7 +89,7 @@
         app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
         app:layout_constraintBottom_toBottomOf="parent"
 
-        app:layout_constraintVertical_bias="0.125"
+        app:layout_constraintVertical_bias="0.08"
         />
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -88,51 +114,60 @@
         android:elevation="10dp"
         />
 
-    <com.airbnb.lottie.LottieAnimationView
-        android:id="@+id/loading"
-
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-
-        app:lottie_rawRes="@raw/loading_animation"
-        app:lottie_loop="true"
-        app:lottie_autoPlay="true"
-        app:lottie_speed="0.5"
-
-        app:layout_constraintVertical_bias="0.90"
-        />
-
     <TextView
-        android:id="@+id/loading_txt"
+        android:id="@+id/address_results"
 
         android:layout_width="0dp"
-        android:layout_height="75dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintWidth_percent="0.75"
 
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="@string/loading_txt"
-        android:textAppearance="@style/text"
-        android:gravity="center_horizontal|top"
+        android:text="RM 123, 1/F, ABC HSE, HK"
+        android:textColor="#000000"
+        android:autoSizeTextType="uniform"
 
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
-        app:layout_constraintStart_toStartOf="@id/guideline_titleStart"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
         app:layout_constraintTop_toTopOf="parent"
 
-        app:layout_constraintVertical_bias="1.0"
+        android:elevation="10dp"
+        />
+
+    <Button
+        android:id="@+id/loading"
+
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
+        app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:text="CONFIRM"
+        android:gravity="center_horizontal|center"
+        android:textColor="#FFFFFF"
+        android:autoSizeTextType="uniform"
+        android:maxLines="1"
+        android:backgroundTint="#D3AC9C"
+        app:cornerRadius="100dp"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
+
+        app:layout_constraintVertical_bias="0.925"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
