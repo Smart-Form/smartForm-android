@@ -488,7 +488,7 @@
 
                         android:paddingStart="25dp"
 
-                        android:text="Old Age Allowance"
+                        android:text="Short-term Food Assistance Service - Blessed Food"
                         android:maxLines="1"
                         android:ellipsize="end"
                         android:textAppearance="@style/title4"
@@ -830,7 +830,7 @@
 
                         android:paddingStart="25dp"
 
-                        android:text="Old Age Allowance"
+                        android:text="Short-term Food Assistance Service - Blessed Food"
                         android:maxLines="1"
                         android:ellipsize="end"
                         android:textAppearance="@style/title4"

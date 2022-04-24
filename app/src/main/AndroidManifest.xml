@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartformandroid">
         <activity
+            android:name=".question_daterange"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".question_date"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
             android:name=".question_binary"
             android:screenOrientation="portrait"
             android:exported="false" />

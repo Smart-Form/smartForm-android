@@ -48,7 +48,7 @@ public class question_mc extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_mc.this, question_binary.class));
+                startActivity(new Intent(question_mc.this, question_daterange.class));
             }
         });
 

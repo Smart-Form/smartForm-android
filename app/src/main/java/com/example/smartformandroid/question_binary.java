@@ -41,7 +41,7 @@ public class question_binary extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_binary.this, question_mc.class));
+                startActivity(new Intent(question_binary.this, question_date.class));
             }
         });
 
