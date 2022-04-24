@@ -52,138 +52,33 @@ public class question_mc extends AppCompatActivity {
             }
         });
 
-        Button thisObject = (Button) findViewById(R.id.answer0);
-        thisObject.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (thisObject.getTag() == null) {
-                    thisObject.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                    thisObject.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                    thisObject.setTag(1);
-                } else {
-                    int tag = (Integer) thisObject.getTag();
-                    if (tag == 0){
-                        thisObject.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                        thisObject.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                        thisObject.setTag(1);
+        int total_resource = 6;
+        for (int i=0; i<total_resource; i++) {
+            int id = getResources().getIdentifier("answer" + i, "id", getPackageName());
+            Button thisObj = (Button) findViewById(id);
+
+            thisObj.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (thisObj.getTag() == null) {
+                        thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
+                        thisObj.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
+                        thisObj.setTag(1);
                     } else {
-                        thisObject.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
-                        thisObject.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
-                        thisObject.setTag(0);
+                        int tag = (Integer) thisObj.getTag();
+                        if (tag == 0){
+                            thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
+                            thisObj.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
+                            thisObj.setTag(1);
+                        } else {
+                            thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
+                            thisObj.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
+                            thisObj.setTag(0);
+                        }
                     }
                 }
-            }
-        });
-        Button thisObject2 = (Button) findViewById(R.id.answer1);
-        thisObject2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (thisObject2.getTag() == null) {
-                    thisObject2.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                    thisObject2.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                    thisObject2.setTag(1);
-                } else {
-                    int tag = (Integer) thisObject2.getTag();
-                    if (tag == 0){
-                        thisObject2.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                        thisObject2.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                        thisObject2.setTag(1);
-                    } else {
-                        thisObject2.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
-                        thisObject2.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
-                        thisObject2.setTag(0);
-                    }
-                }
-            }
-        });
-        Button thisObject3 = (Button) findViewById(R.id.answer2);
-        thisObject3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (thisObject3.getTag() == null) {
-                    thisObject3.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                    thisObject3.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                    thisObject3.setTag(1);
-                } else {
-                    int tag = (Integer) thisObject3.getTag();
-                    if (tag == 0){
-                        thisObject3.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                        thisObject3.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                        thisObject3.setTag(1);
-                    } else {
-                        thisObject3.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
-                        thisObject3.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
-                        thisObject3.setTag(0);
-                    }
-                }
-            }
-        });
-        Button thisObject4 = (Button) findViewById(R.id.answer3);
-        thisObject4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (thisObject4.getTag() == null) {
-                    thisObject4.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                    thisObject4.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                    thisObject4.setTag(1);
-                } else {
-                    int tag = (Integer) thisObject4.getTag();
-                    if (tag == 0){
-                        thisObject4.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                        thisObject4.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                        thisObject4.setTag(1);
-                    } else {
-                        thisObject4.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
-                        thisObject4.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
-                        thisObject4.setTag(0);
-                    }
-                }
-            }
-        });
-        Button thisObject5 = (Button) findViewById(R.id.answer4);
-        thisObject5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (thisObject5.getTag() == null) {
-                    thisObject5.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                    thisObject5.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                    thisObject5.setTag(1);
-                } else {
-                    int tag = (Integer) thisObject5.getTag();
-                    if (tag == 0){
-                        thisObject5.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                        thisObject5.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                        thisObject5.setTag(1);
-                    } else {
-                        thisObject5.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
-                        thisObject5.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
-                        thisObject5.setTag(0);
-                    }
-                }
-            }
-        });
-        Button thisObject6 = (Button) findViewById(R.id.answer5);
-        thisObject6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (thisObject6.getTag() == null) {
-                    thisObject6.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                    thisObject6.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                    thisObject6.setTag(1);
-                } else {
-                    int tag = (Integer) thisObject6.getTag();
-                    if (tag == 0){
-                        thisObject6.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
-                        thisObject6.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
-                        thisObject6.setTag(1);
-                    } else {
-                        thisObject6.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
-                        thisObject6.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
-                        thisObject6.setTag(0);
-                    }
-                }
-            }
-        });
+            });
+        }
     }
 
     CountDownTimer countDownTimer = new CountDownTimer(600000, 1000) {

@@ -42,34 +42,71 @@ public class select extends AppCompatActivity {
             }
         });
 
-        Button btn_gov = (Button) findViewById(R.id.gov_form);
-        Button btn_com = (Button) findViewById(R.id.com_form);
-        ScrollView gov_form = (ScrollView) findViewById(R.id.scroll_view_gov);
-        ScrollView com_form = (ScrollView) findViewById(R.id.scroll_view_com);
-        btn_gov.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btn_gov.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.secondaryColor));
-                btn_gov.setTextColor(ContextCompat.getColorStateList(select.this, R.color.primaryTextColor));
-                btn_com.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.disableColor));
-                btn_com.setTextColor(ContextCompat.getColorStateList(select.this, R.color.secondaryTextColor));
-
-                gov_form.setVisibility(View.VISIBLE);
-                com_form.setVisibility(View.INVISIBLE);
+        int total_resource = 4;
+        for (int i=0; i<total_resource; i++) {
+            String category = "";
+            if (i == 0){
+                category = "all";
+            } else if (i == 1){
+                category = "gov";
+            } else if (i == 2){
+                category = "ngo";
+            } else if (i == 3){
+                category = "cha";
             }
-        });
-        btn_com.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btn_gov.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.disableColor));
-                btn_gov.setTextColor(ContextCompat.getColorStateList(select.this, R.color.secondaryTextColor));
-                btn_com.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.secondaryColor));
-                btn_com.setTextColor(ContextCompat.getColorStateList(select.this, R.color.primaryTextColor));
 
-                gov_form.setVisibility(View.INVISIBLE);
-                com_form.setVisibility(View.VISIBLE);
-            }
-        });
+            int id_btn = getResources().getIdentifier(category + "_form", "id", getPackageName());
+            Button thisBtn = (Button) findViewById(id_btn);
+            int id_form = getResources().getIdentifier("scroll_view_" + category, "id", getPackageName());
+            ScrollView thisForm = (ScrollView) findViewById(id_form);
+
+            thisBtn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    for (int i=0; i<total_resource; i++) {
+                        String category = "";
+                        if (i == 0){
+                            category = "all";
+                        } else if (i == 1){
+                            category = "gov";
+                        } else if (i == 2){
+                            category = "ngo";
+                        } else if (i == 3){
+                            category = "cha";
+                        }
+
+                        int id_btn = getResources().getIdentifier(category + "_form", "id", getPackageName());
+                        Button otherBtns = (Button) findViewById(id_btn);
+
+                        otherBtns.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.disableColor));
+                        otherBtns.setTextColor(ContextCompat.getColorStateList(select.this, R.color.secondaryTextColor));
+                    }
+
+                    thisBtn.setBackgroundTintList(ContextCompat.getColorStateList(select.this, R.color.secondaryColor));
+                    thisBtn.setTextColor(ContextCompat.getColorStateList(select.this, R.color.primaryTextColor));
+
+                    for (int i=0; i<total_resource; i++) {
+                        String category = "";
+                        if (i == 0){
+                            category = "all";
+                        } else if (i == 1){
+                            category = "gov";
+                        } else if (i == 2){
+                            category = "ngo";
+                        } else if (i == 3){
+                            category = "cha";
+                        }
+
+                        int id_form = getResources().getIdentifier("scroll_view_" + category, "id", getPackageName());
+                        ScrollView otherForms = (ScrollView) findViewById(id_form);
+
+                        otherForms.setVisibility(View.INVISIBLE);
+                    }
+
+                    thisForm.setVisibility(View.VISIBLE);
+                }
+            });
+        }
     }
 
     CountDownTimer countDownTimer = new CountDownTimer(600000, 1000) {
