@@ -79,7 +79,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Question 4"
+        android:text="Question 6"
         android:textAppearance="@style/title"
         android:maxLines="1"
         android:textStyle="bold"
@@ -105,7 +105,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="4 of 10 Questions"
+        android:text="6 of 8 Questions"
         android:textAppearance="@style/subtitle"
         android:maxLines="1"
         android:textColor="#FFFFFF"
@@ -153,7 +153,7 @@
         android:id="@+id/question_option_question"
 
         android:layout_width="0dp"
-        android:layout_height="125dp"
+        android:layout_height="150dp"
         app:layout_constraintWidth_percent="0.95"
 
         android:layout_alignParentTop="true"
@@ -161,8 +161,8 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="The question"
-        android:textAppearance="@style/subtitle"
+        android:text="Other information (including other welfare needs)"
+        android:autoSizeTextType="uniform"
         android:textStyle="bold"
         android:textColor="#000000"
         android:gravity="left|top"
@@ -192,7 +192,7 @@
         android:gravity="left|top"
         android:textSize="45dp"
         android:textColor="#000000"
-        android:hint="Type your answer here..."
+        android:hint="Please specify\n\nType your answer here..."
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

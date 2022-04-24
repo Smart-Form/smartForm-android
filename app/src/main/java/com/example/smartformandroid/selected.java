@@ -1,22 +1,18 @@
 package com.example.smartformandroid;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.os.LocaleList;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText; // changeKeyboardLanguage
 import android.widget.TextView;
 
-import java.util.Locale;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class question_text extends AppCompatActivity {
+public class selected extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +29,15 @@ public class question_text extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        setContentView(R.layout.activity_question_text);
+        setContentView(R.layout.activity_selected);
 
-        // changeKeyboardLanguage 2
-        EditText editText = (EditText) findViewById(R.id.plain_text_input);
-        editText.setImeHintLocales(new LocaleList(new Locale("en", "USA")));
-        // changeKeyboardLanguage 2 end
-
-        Button btn = (Button) findViewById(R.id.loading);
+        Button btn = (Button) findViewById(R.id.confirm_button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_text.this, question_option2.class));
+                startActivity(new Intent(selected.this, history.class));
             }
         });
 
@@ -56,7 +47,7 @@ public class question_text extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_text.this, question_option.class));
+                startActivity(new Intent(selected.this, select.class));
             }
         });
     }
@@ -68,7 +59,7 @@ public class question_text extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
-            startActivity(new Intent(question_text.this, language.class));
+            startActivity(new Intent(selected.this, language.class));
         }
     }.start();
     @Override

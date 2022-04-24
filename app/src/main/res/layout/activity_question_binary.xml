@@ -105,7 +105,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="1 of 10 Questions"
+        android:text="1 of 8 Questions"
         android:textAppearance="@style/subtitle"
         android:maxLines="1"
         android:textColor="#FFFFFF"
@@ -154,7 +154,7 @@
                 android:id="@+id/question_binary_question"
 
                 android:layout_width="0dp"
-                android:layout_height="125dp"
+                android:layout_height="150dp"
                 app:layout_constraintWidth_percent="0.95"
 
                 android:layout_alignParentTop="true"
@@ -162,8 +162,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
 
-                android:text="The question"
-                android:textAppearance="@style/subtitle"
+                android:text="Income per month (excluding contributions from family members, relatives and friends, etc.) "
+                android:autoSizeTextType="uniform"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:gravity="left|top"

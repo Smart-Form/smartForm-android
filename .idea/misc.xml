@@ -22,6 +22,7 @@
         <entry key="app/src/main/res/layout-sw700dp/activity_language.xml" value="0.11511817440912796" />
         <entry key="app/src/main/res/layout-sw700dp/activity_main.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout-sw700dp/activity_select.xml" value="0.11511817440912796" />
+        <entry key="app/src/main/res/layout-sw700dp/activity_selected.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout-w720dp/activity_address_confirm.xml" value="0.11283003300330033" />
         <entry key="app/src/main/res/layout/activity_2.xml" value="0.24592391304347827" />
         <entry key="app/src/main/res/layout/activity_3.xml" value="0.1387126019945603" />
@@ -30,6 +31,7 @@
         <entry key="app/src/main/res/layout/activity_bye.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_data_allow.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_fullscreen.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_history.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_id_card.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_id_card_confirm.xml" value="0.11283003300330033" />
         <entry key="app/src/main/res/layout/activity_language.xml" value="0.11707000732421877" />
@@ -41,9 +43,12 @@
         <entry key="app/src/main/res/layout/activity_question_daterange.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_question_mc.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_question_option.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_question_option2.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_question_option3.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_question_text.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_question_text_cht.xml" value="0.11171875" />
         <entry key="app/src/main/res/layout/activity_select.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_selected.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_test.xml" value="0.11065943992773261" />
         <entry key="app/src/main/res/layout/activity_type.xml" value="0.1" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.24155622060709706" />

@@ -79,7 +79,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Question 3"
+        android:text="Question 5"
         android:textAppearance="@style/title"
         android:maxLines="1"
         android:textStyle="bold"
@@ -105,7 +105,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="3 of 10 Questions"
+        android:text="5 of 8 Questions"
         android:textAppearance="@style/subtitle"
         android:maxLines="1"
         android:textColor="#FFFFFF"
@@ -154,7 +154,7 @@
                 android:id="@+id/question_option_question"
 
                 android:layout_width="0dp"
-                android:layout_height="125dp"
+                android:layout_height="150dp"
                 app:layout_constraintWidth_percent="0.95"
 
                 android:layout_alignParentTop="true"
@@ -162,8 +162,8 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
 
-                android:text="The question"
-                android:textAppearance="@style/subtitle"
+                android:text="Accommodation status"
+                android:autoSizeTextType="uniform"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:gravity="left|top"
@@ -193,7 +193,7 @@
                 app:layout_constraintStart_toStartOf="@id/question_option_question"
                 app:layout_constraintTop_toBottomOf="@id/question_option_question"
 
-                android:text="A"
+                android:text="Self-owned"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"
@@ -224,7 +224,7 @@
                 app:layout_constraintEnd_toEndOf="@id/question_option_question"
                 app:layout_constraintTop_toBottomOf="@id/question_option_question"
 
-                android:text="B"
+                android:text="Rented"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"
@@ -255,7 +255,7 @@
                 app:layout_constraintStart_toStartOf="@id/question_option_question"
                 app:layout_constraintTop_toBottomOf="@id/question_option_question"
 
-                android:text="C"
+                android:text="Public Housing"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"
@@ -286,7 +286,7 @@
                 app:layout_constraintEnd_toEndOf="@id/question_option_question"
                 app:layout_constraintTop_toBottomOf="@id/question_option_question"
 
-                android:text="D"
+                android:text="Living with family"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"
@@ -317,7 +317,7 @@
                 app:layout_constraintStart_toStartOf="@id/question_option_question"
                 app:layout_constraintTop_toBottomOf="@id/question_option_question"
 
-                android:text="E"
+                android:text="Self-owned with mortgage"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"
@@ -348,7 +348,7 @@
                 app:layout_constraintEnd_toEndOf="@id/question_option_question"
                 app:layout_constraintTop_toBottomOf="@id/question_option_question"
 
-                android:text="F"
+                android:text="None of the above"
                 android:textColor="#000000"
                 android:textAppearance="@style/title4"
                 android:maxLines="3"

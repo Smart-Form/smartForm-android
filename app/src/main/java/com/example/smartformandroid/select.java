@@ -38,7 +38,7 @@ public class select extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(select.this, question_binary.class));
+                startActivity(new Intent(select.this, selected.class));
             }
         });
 

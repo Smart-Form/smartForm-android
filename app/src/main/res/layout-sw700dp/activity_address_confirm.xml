@@ -127,7 +127,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="RM 123, 1/F, ABC HSE, HK"
+        android:text="Flat A, 20/F, Block 1, Festival City I Tower 2, 1 Mei Tin Rd, Tai Wai"
         android:textColor="#000000"
         android:autoSizeTextType="uniform"
 

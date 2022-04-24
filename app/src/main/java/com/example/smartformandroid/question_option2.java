@@ -1,9 +1,6 @@
 package com.example.smartformandroid;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.MotionEvent;
@@ -16,7 +13,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-public class question_binary extends AppCompatActivity {
+public class question_option2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +30,7 @@ public class question_binary extends AppCompatActivity {
                 | View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
-        setContentView(R.layout.activity_question_binary);
+        setContentView(R.layout.activity_question_option2);
 
         Button btn = (Button) findViewById(R.id.loading);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -41,7 +38,7 @@ public class question_binary extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_binary.this, question_date.class));
+                startActivity(new Intent(question_option2.this, question_option3.class));
             }
         });
 
@@ -51,14 +48,14 @@ public class question_binary extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_binary.this, history.class));
+                startActivity(new Intent(question_option2.this, question_option.class));
             }
         });
 
-        int total_resource = 2;
+        int total_resource = 6;
         for (int i=0; i<total_resource; i++) {
             // Retrieve ID dynamically
-            int id = getResources().getIdentifier("answer_binary"+i, "id", getPackageName());
+            int id = getResources().getIdentifier("answer_option"+i, "id", getPackageName());
             Button thisObj = (Button) findViewById(id); // Get the element
 
             // Set event to the element
@@ -68,40 +65,40 @@ public class question_binary extends AppCompatActivity {
                     if (thisObj.getTag() == null) {
                         // Disable all options
                         for (int i=0; i<total_resource; i++) {
-                            int id = getResources().getIdentifier("answer_binary"+i, "id", getPackageName());
+                            int id = getResources().getIdentifier("answer_option"+i, "id", getPackageName());
                             Button obj = (Button) findViewById(id);
-                            obj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.disableColor));
-                            obj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryTextColor));
+                            obj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.disableColor));
+                            obj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryTextColor));
                             obj.setTag(0);
                         }
 
                         // Color the clicked option
-                        thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryColor));
-                        thisObj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.primaryTextColor));
+                        thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryColor));
+                        thisObj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.primaryTextColor));
                         thisObj.setTag(1);
                     } else {
                         int tag = (Integer) thisObj.getTag();
                         if (tag == 0){
                             // Disable all options
                             for (int i=0; i<total_resource; i++) {
-                                int id = getResources().getIdentifier("answer_binary"+i, "id", getPackageName());
+                                int id = getResources().getIdentifier("answer_option"+i, "id", getPackageName());
                                 Button obj = (Button) findViewById(id);
-                                obj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.disableColor));
-                                obj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryTextColor));
+                                obj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.disableColor));
+                                obj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryTextColor));
                                 obj.setTag(0);
                             }
 
                             // Color the clicked option
-                            thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryColor));
-                            thisObj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.primaryTextColor));
+                            thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryColor));
+                            thisObj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.primaryTextColor));
                             thisObj.setTag(1);
                         } else {
                             // Disable all options
                             for (int i=0; i<total_resource; i++) {
-                                int id = getResources().getIdentifier("answer_binary"+i, "id", getPackageName());
+                                int id = getResources().getIdentifier("answer_option"+i, "id", getPackageName());
                                 Button obj = (Button) findViewById(id);
-                                obj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.disableColor));
-                                obj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryTextColor));
+                                obj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.disableColor));
+                                obj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryTextColor));
                                 obj.setTag(0);
                             }
                         }
@@ -118,7 +115,7 @@ public class question_binary extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
-            startActivity(new Intent(question_binary.this, language.class));
+            startActivity(new Intent(question_option2.this, language.class));
         }
     }.start();
     @Override
