@@ -14,6 +14,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class question_option extends AppCompatActivity {
+    int nextPageID = 5; // Default
+    Class nextPageName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +34,40 @@ public class question_option extends AppCompatActivity {
 
         setContentView(R.layout.activity_question_option);
 
+        // Here nextPageID is changed by data received from DB
+        // ...
+        // Find next page when new nextPageID is received from DB
+        if (nextPageID == 0){
+            nextPageName = question_binary.class;
+        } else if (nextPageID == 1){
+            nextPageName = question_date.class;
+        } else if (nextPageID == 2){
+            nextPageName = question_daterange.class;
+        } else if (nextPageID == 3){
+            nextPageName = question_mc.class;
+        } else if (nextPageID == 4){
+            nextPageName = question_option.class;
+        } else if (nextPageID == 5){
+            nextPageName = question_text.class;
+        } else if (nextPageID == 6){
+            nextPageName = signature.class;
+        } else if (nextPageID == 7){
+            nextPageName = bye.class;
+        }
+        // The page for testing only
+        if (nextPageID == 99){
+            nextPageName = question_option2.class;
+        } else if (nextPageID == 98) {
+            nextPageName = question_option3.class;
+        }
+
         Button btn = (Button) findViewById(R.id.loading);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_option.this, question_text.class));
+                startActivity(new Intent(question_option.this, nextPageName));
             }
         });
 

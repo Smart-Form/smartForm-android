@@ -50,7 +50,7 @@ public class language extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                startActivity(new Intent(language.this, id_card.class));
+                startActivity(new Intent(language.this, language.class));
             }
         });
         // buttonOnclickNewIntent 2 end

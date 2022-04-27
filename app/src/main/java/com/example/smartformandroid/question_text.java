@@ -17,6 +17,8 @@ import android.widget.TextView;
 import java.util.Locale;
 
 public class question_text extends AppCompatActivity {
+    int nextPageID = 99; // Default
+    Class nextPageName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,7 +37,34 @@ public class question_text extends AppCompatActivity {
 
         setContentView(R.layout.activity_question_text);
 
-        // changeKeyboardLanguage 2
+        // Here nextPageID is changed by data received from DB
+        // ...
+        // Find next page when new nextPageID is received from DB
+        if (nextPageID == 0){
+            nextPageName = question_binary.class;
+        } else if (nextPageID == 1){
+            nextPageName = question_date.class;
+        } else if (nextPageID == 2){
+            nextPageName = question_daterange.class;
+        } else if (nextPageID == 3){
+            nextPageName = question_mc.class;
+        } else if (nextPageID == 4){
+            nextPageName = question_option.class;
+        } else if (nextPageID == 5){
+            nextPageName = question_text.class;
+        } else if (nextPageID == 6){
+            nextPageName = signature.class;
+        } else if (nextPageID == 7){
+            nextPageName = bye.class;
+        }
+        // The page for testing only
+        if (nextPageID == 99){
+            nextPageName = question_option2.class;
+        } else if (nextPageID == 98) {
+            nextPageName = question_option3.class;
+        }
+
+            // changeKeyboardLanguage 2
         EditText editText = (EditText) findViewById(R.id.plain_text_input);
         editText.setImeHintLocales(new LocaleList(new Locale("en", "USA")));
         // changeKeyboardLanguage 2 end
@@ -46,7 +75,7 @@ public class question_text extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_text.this, question_option2.class));
+                startActivity(new Intent(question_text.this, nextPageName));
             }
         });
 

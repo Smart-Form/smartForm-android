@@ -69,7 +69,7 @@
         />
 
     <TextView
-        android:id="@+id/question_option_title"
+        android:id="@+id/question_text_cht_title"
 
         android:layout_width="0dp"
         android:layout_height="100dp"
@@ -79,7 +79,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="問題 三"
+        android:text="問題 六"
         android:textAppearance="@style/title"
         android:maxLines="1"
         android:textStyle="bold"
@@ -95,7 +95,7 @@
         />
 
     <TextView
-        android:id="@+id/question_option_subtitle"
+        android:id="@+id/question_text_cht_subtitle"
 
         android:layout_width="0dp"
         android:layout_height="75dp"
@@ -105,19 +105,19 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="共十條問題，這是第三條"
+        android:text="共八條問題，這是第六條"
         android:textAppearance="@style/subtitle"
         android:maxLines="1"
         android:textColor="#FFFFFF"
         android:gravity="left|top"
 
-        app:layout_constraintTop_toBottomOf="@id/question_option_title"
+        app:layout_constraintTop_toBottomOf="@id/question_text_cht_title"
         app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
         app:layout_constraintEnd_toEndOf="@+id/guideline_titleEnd"
         />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView_question_text"
+        android:id="@+id/cardView_question_text_cht"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="@id/guideline_titleEnd"
@@ -150,7 +150,7 @@
                 />
 
             <TextView
-                android:id="@+id/question_option_question"
+                android:id="@+id/question_text_cht_question"
 
                 android:layout_width="0dp"
                 android:layout_height="150dp"
@@ -161,7 +161,7 @@
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
 
-                android:text="問題"
+                android:text="其他資料（包括其他福利需要）"
                 android:autoSizeTextType="uniform"
                 android:textStyle="bold"
                 android:textColor="#000000"
@@ -176,7 +176,7 @@
                 />
 
             <EditText
-                android:id="@+id/plain_text_input"
+                android:id="@+id/plain_text_input_cht"
 
                 android:layout_height="0dp"
                 android:layout_width="0dp"

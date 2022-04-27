@@ -13,4 +13,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "smartformandroid"
-include ':app'
+include ':app', ':signature-pad'

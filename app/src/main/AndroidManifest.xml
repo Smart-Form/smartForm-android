@@ -12,6 +12,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Smartformandroid">
         <activity
+            android:name=".signature"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
             android:name=".question_option3"
             android:screenOrientation="portrait"
             android:exported="false" />

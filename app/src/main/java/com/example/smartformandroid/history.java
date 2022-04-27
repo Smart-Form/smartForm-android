@@ -14,6 +14,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 public class history extends AppCompatActivity {
+    int nextPageID = 0; // Default
+    Class nextPageName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,13 +34,34 @@ public class history extends AppCompatActivity {
 
         setContentView(R.layout.activity_history);
 
+        // Here nextPageID is changed by data received from DB
+        // ...
+        // Find next page when new nextPageID is received from DB
+        if (nextPageID == 0){
+            nextPageName = question_binary.class;
+        } else if (nextPageID == 1){
+            nextPageName = question_date.class;
+        } else if (nextPageID == 2){
+            nextPageName = question_daterange.class;
+        } else if (nextPageID == 3){
+            nextPageName = question_mc.class;
+        } else if (nextPageID == 4){
+            nextPageName = question_option.class;
+        } else if (nextPageID == 5){
+            nextPageName = question_text.class;
+        } else if (nextPageID == 6){
+            nextPageName = signature.class;
+        } else if (nextPageID == 7){
+            nextPageName = bye.class;
+        }
+
         Button btn = (Button) findViewById(R.id.confirm_button);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(history.this, question_binary.class));
+                startActivity(new Intent(history.this, nextPageName));
             }
         });
 
