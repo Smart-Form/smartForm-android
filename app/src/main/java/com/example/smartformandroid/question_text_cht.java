@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.LocaleList;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -35,16 +37,39 @@ public class question_text_cht extends AppCompatActivity {
 
         setContentView(R.layout.activity_question_text_cht);
 
-        EditText editText = (EditText) findViewById(R.id.plain_text_input);
-        editText.setImeHintLocales(new LocaleList(new Locale("zh", "CN")));
-
         Button btn = (Button) findViewById(R.id.loading);
+        btn.setEnabled(false);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                finish();
                 startActivity(new Intent(question_text_cht.this, bye.class));
+            }
+        });
+
+        EditText editText = (EditText) findViewById(R.id.plain_text_input);
+        editText.setImeHintLocales(new LocaleList(new Locale("zh", "CN")));
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                if (s.toString().trim().length() == 0) {
+                    // set text to Not typing
+                    //confirm.setText("Not Typing");
+                } else {
+                    // set text to typing
+                    //confirm.setText(" Typing");
+                }
+            }
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                // Enable NEXT QUESTION button
+                btn.setEnabled(true);
+            }
+            @Override
+            public void afterTextChanged(Editable s) {
+                if (s.toString().trim().length() == 0) {
+                    //confirm.setText("Stopped Typing");
+                }
             }
         });
 
@@ -54,7 +79,6 @@ public class question_text_cht extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_text_cht.this, question_text.class));
             }
         });
     }

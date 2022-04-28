@@ -50,7 +50,7 @@ public class question_option2 extends AppCompatActivity {
         } else if (nextPageID == 5){
             nextPageName = question_text.class;
         } else if (nextPageID == 6){
-            nextPageName = signature.class;
+            nextPageName = question_signature.class;
         } else if (nextPageID == 7){
             nextPageName = bye.class;
         }
@@ -62,11 +62,11 @@ public class question_option2 extends AppCompatActivity {
         }
 
         Button btn = (Button) findViewById(R.id.loading);
+        btn.setEnabled(false);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                finish();
                 startActivity(new Intent(question_option2.this, nextPageName));
             }
         });
@@ -77,7 +77,6 @@ public class question_option2 extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_option2.this, question_option.class));
             }
         });
 
@@ -105,6 +104,9 @@ public class question_option2 extends AppCompatActivity {
                         thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryColor));
                         thisObj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.primaryTextColor));
                         thisObj.setTag(1);
+
+                        // Enable NEXT QUESTION button
+                        btn.setEnabled(true);
                     } else {
                         int tag = (Integer) thisObj.getTag();
                         if (tag == 0){
@@ -121,15 +123,6 @@ public class question_option2 extends AppCompatActivity {
                             thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryColor));
                             thisObj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.primaryTextColor));
                             thisObj.setTag(1);
-                        } else {
-                            // Disable all options
-                            for (int i=0; i<total_resource; i++) {
-                                int id = getResources().getIdentifier("answer_option"+i, "id", getPackageName());
-                                Button obj = (Button) findViewById(id);
-                                obj.setBackgroundTintList(ContextCompat.getColorStateList(question_option2.this, R.color.disableColor));
-                                obj.setTextColor(ContextCompat.getColorStateList(question_option2.this, R.color.secondaryTextColor));
-                                obj.setTag(0);
-                            }
                         }
                     }
                 }

@@ -36,7 +36,6 @@ public class selected extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                finish();
                 startActivity(new Intent(selected.this, history.class));
             }
         });
@@ -47,7 +46,6 @@ public class selected extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(selected.this, select.class));
             }
         });
     }

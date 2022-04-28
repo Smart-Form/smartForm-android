@@ -50,7 +50,7 @@ public class question_mc extends AppCompatActivity {
         } else if (nextPageID == 5){
             nextPageName = question_text.class;
         } else if (nextPageID == 6){
-            nextPageName = signature.class;
+            nextPageName = question_signature.class;
         } else if (nextPageID == 7){
             nextPageName = bye.class;
         }
@@ -62,11 +62,11 @@ public class question_mc extends AppCompatActivity {
         }
 
         Button btn = (Button) findViewById(R.id.loading);
+        btn.setEnabled(false);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                finish();
                 startActivity(new Intent(question_mc.this, nextPageName));
             }
         });
@@ -77,7 +77,6 @@ public class question_mc extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_mc.this, question_daterange.class));
             }
         });
 
@@ -93,16 +92,38 @@ public class question_mc extends AppCompatActivity {
                         thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
                         thisObj.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
                         thisObj.setTag(1);
+                        // Enable NEXT QUESTION button
+                        btn.setEnabled(true);
                     } else {
                         int tag = (Integer) thisObj.getTag();
                         if (tag == 0){
                             thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryColor));
                             thisObj.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.primaryTextColor));
                             thisObj.setTag(1);
+                            // Enable NEXT QUESTION button
+                            btn.setEnabled(true);
                         } else {
                             thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_mc.this, R.color.disableColor));
                             thisObj.setTextColor(ContextCompat.getColorStateList(question_mc.this, R.color.secondaryTextColor));
                             thisObj.setTag(0);
+
+                            // Disable NEXT QUESTION button
+                            int tagIsZeroCount = 0;
+                            for (int i2=0; i2<total_resource; i2++) {
+                                int id2 = getResources().getIdentifier("answer" + i2, "id", getPackageName());
+                                Button thisObj2 = (Button) findViewById(id2);
+                                if (thisObj2.getTag() == null) {
+                                    tagIsZeroCount++;
+                                } else {
+                                    int tag2 = (Integer) thisObj2.getTag();
+                                    if (tag2 == 0) {
+                                        tagIsZeroCount++;
+                                    }
+                                }
+                            }
+                            if (tagIsZeroCount == 6) {
+                                btn.setEnabled(false);
+                            }
                         }
                     }
                 }

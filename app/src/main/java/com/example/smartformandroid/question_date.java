@@ -55,7 +55,7 @@ public class question_date extends AppCompatActivity {
         } else if (nextPageID == 5){
             nextPageName = question_text.class;
         } else if (nextPageID == 6){
-            nextPageName = signature.class;
+            nextPageName = question_signature.class;
         } else if (nextPageID == 7){
             nextPageName = bye.class;
         }
@@ -71,7 +71,6 @@ public class question_date extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                finish();
                 startActivity(new Intent(question_date.this, nextPageName));
             }
         });
@@ -82,7 +81,6 @@ public class question_date extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_date.this, question_binary.class));
             }
         });
 

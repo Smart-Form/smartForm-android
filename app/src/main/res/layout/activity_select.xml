@@ -313,6 +313,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_gov"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"
@@ -373,6 +375,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_gov2"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"
@@ -435,6 +439,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_ngo"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"
@@ -495,6 +501,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_cha"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"
@@ -587,6 +595,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_gov_gov"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"
@@ -596,7 +606,7 @@
 
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        />
+                        tools:ignore="DuplicateIds" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
@@ -647,6 +657,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_gov_gov2"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"
@@ -741,6 +753,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_ngo_ngo"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"
@@ -833,6 +847,8 @@
                         app:layout_constraintBottom_toBottomOf="parent"
                         />
                     <CheckBox
+                        android:id="@+id/select_checkbox_cha_cha"
+
                         android:layout_width="125dp"
                         android:layout_height="125dp"
                         android:button="@null"

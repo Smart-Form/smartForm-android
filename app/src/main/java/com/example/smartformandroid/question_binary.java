@@ -1,9 +1,6 @@
 package com.example.smartformandroid;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.MotionEvent;
@@ -53,7 +50,7 @@ public class question_binary extends AppCompatActivity {
         } else if (nextPageID == 5){
             nextPageName = question_text.class;
         } else if (nextPageID == 6){
-            nextPageName = signature.class;
+            nextPageName = question_signature.class;
         } else if (nextPageID == 7){
             nextPageName = bye.class;
         }
@@ -65,11 +62,11 @@ public class question_binary extends AppCompatActivity {
         }
 
         Button btn = (Button) findViewById(R.id.loading);
+        btn.setEnabled(false);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                finish();
                 startActivity(new Intent(question_binary.this, nextPageName));
             }
         });
@@ -80,7 +77,6 @@ public class question_binary extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(question_binary.this, history.class));
             }
         });
 
@@ -108,6 +104,9 @@ public class question_binary extends AppCompatActivity {
                         thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryColor));
                         thisObj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.primaryTextColor));
                         thisObj.setTag(1);
+
+                        // Enable NEXT QUESTION button
+                        btn.setEnabled(true);
                     } else {
                         int tag = (Integer) thisObj.getTag();
                         if (tag == 0){
@@ -124,15 +123,6 @@ public class question_binary extends AppCompatActivity {
                             thisObj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryColor));
                             thisObj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.primaryTextColor));
                             thisObj.setTag(1);
-                        } else {
-                            // Disable all options
-                            for (int i=0; i<total_resource; i++) {
-                                int id = getResources().getIdentifier("answer_binary"+i, "id", getPackageName());
-                                Button obj = (Button) findViewById(id);
-                                obj.setBackgroundTintList(ContextCompat.getColorStateList(question_binary.this, R.color.disableColor));
-                                obj.setTextColor(ContextCompat.getColorStateList(question_binary.this, R.color.secondaryTextColor));
-                                obj.setTag(0);
-                            }
                         }
                     }
                 }

@@ -11,7 +11,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ScrollView;
+import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class select extends AppCompatActivity {
 
@@ -36,9 +41,48 @@ public class select extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                countDownTimer.cancel();
-                finish();
-                startActivity(new Intent(select.this, selected.class));
+                boolean isChecked = false;
+                // Array List
+                //ArrayList<String> arrayList = new ArrayList<>();
+                //arrayList.add("anArrayItem");
+                //arrayList.addAll(arrayList2);
+                //arrayList.remove("anArrayItem");
+                //arrayList.removeAll(arrayList2);
+                //arrayList.clear();
+                //arrayList.get(0) // Return "anArrayItem"
+                //int a = arrayList.indexOf("anArrayItem"); // Return 0
+                //int i = arrayList.size();
+                //boolean b = arrayList.contains("anArrayItem"); // b = true
+                //boolean empty = arrayList.isEmpty(); // empty = false
+                // Array
+                String[] arrayList = new String[] {
+                        "select_checkbox_gov",
+                        "select_checkbox_gov2",
+                        "select_checkbox_ngo",
+                        "select_checkbox_cha",
+                        "select_checkbox_gov_gov",
+                        "select_checkbox_gov_gov2",
+                        "select_checkbox_ngo_ngo",
+                        "select_checkbox_cha_cha"
+                };
+                ArrayList<String> arrayList2 = new ArrayList<>();
+                // Adding an Array into an Array List
+                arrayList2.addAll(Arrays.asList(arrayList));
+                for (String size: arrayList2) {
+                    int ID = getResources().getIdentifier(size, "id", getPackageName());
+                    if (((CheckBox) findViewById(ID)).isChecked()) {
+                        isChecked = true;
+                        System.out.println("isChecked ok"); // Or log.t("TAG", "MSG")
+                        break;
+                    }
+                }
+
+                if (isChecked) {
+                    countDownTimer.cancel();
+                    startActivity(new Intent(select.this, selected.class));
+                } else {
+                    Toast.makeText(select.this, "Please select form(s)", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

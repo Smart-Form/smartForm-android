@@ -8,7 +8,6 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -50,17 +49,20 @@ public class history extends AppCompatActivity {
         } else if (nextPageID == 5){
             nextPageName = question_text.class;
         } else if (nextPageID == 6){
-            nextPageName = signature.class;
+            nextPageName = question_signature.class;
         } else if (nextPageID == 7){
             nextPageName = bye.class;
         }
 
         Button btn = (Button) findViewById(R.id.confirm_button);
+        btn.setEnabled(false);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                finish();
+                // Close all the previous activities and clear the memory
+                finishAffinity();
+                System.exit(0);
                 startActivity(new Intent(history.this, nextPageName));
             }
         });
@@ -89,6 +91,9 @@ public class history extends AppCompatActivity {
                         thisObj.setBackgroundTintList(ContextCompat.getColorStateList(history.this, R.color.secondaryColor));
                         thisObj.setTextColor(ContextCompat.getColorStateList(history.this, R.color.primaryTextColor));
                         thisObj.setTag(1);
+
+                        // Enable NEXT QUESTION button
+                        btn.setEnabled(true);
                     } else {
                         int tag = (Integer) thisObj.getTag();
                         if (tag == 0){
@@ -105,15 +110,6 @@ public class history extends AppCompatActivity {
                             thisObj.setBackgroundTintList(ContextCompat.getColorStateList(history.this, R.color.secondaryColor));
                             thisObj.setTextColor(ContextCompat.getColorStateList(history.this, R.color.primaryTextColor));
                             thisObj.setTag(1);
-                        } else {
-                            // Disable all options
-                            for (int i=0; i<total_resource; i++) {
-                                int id = getResources().getIdentifier("answer_binary"+i, "id", getPackageName());
-                                Button obj = (Button) findViewById(id);
-                                obj.setBackgroundTintList(ContextCompat.getColorStateList(history.this, R.color.disableColor));
-                                obj.setTextColor(ContextCompat.getColorStateList(history.this, R.color.secondaryTextColor));
-                                obj.setTag(0);
-                            }
                         }
                     }
                 }
