@@ -137,6 +137,7 @@ public class question_option2 extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(question_option2.this, language.class));
         }
     }.start();

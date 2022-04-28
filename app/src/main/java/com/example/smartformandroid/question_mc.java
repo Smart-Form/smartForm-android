@@ -138,6 +138,7 @@ public class question_mc extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(question_mc.this, language.class));
         }
     }.start();

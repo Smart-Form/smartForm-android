@@ -36,6 +36,7 @@ public class selected extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
+                finishAffinity(); // Close all the previous activities
                 startActivity(new Intent(selected.this, history.class));
             }
         });
@@ -57,6 +58,7 @@ public class selected extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(selected.this, language.class));
         }
     }.start();

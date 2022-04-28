@@ -60,9 +60,6 @@ public class history extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 countDownTimer.cancel();
-                // Close all the previous activities and clear the memory
-                finishAffinity();
-                System.exit(0);
                 startActivity(new Intent(history.this, nextPageName));
             }
         });
@@ -124,6 +121,7 @@ public class history extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(history.this, language.class));
         }
     }.start();

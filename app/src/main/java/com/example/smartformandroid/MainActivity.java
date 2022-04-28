@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(MainActivity.this, language.class));
         }
     }.start();

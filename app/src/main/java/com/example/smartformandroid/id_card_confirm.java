@@ -62,6 +62,7 @@ public class id_card_confirm extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(id_card_confirm.this, language.class));
         }
     }.start();

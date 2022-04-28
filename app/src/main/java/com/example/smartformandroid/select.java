@@ -8,7 +8,6 @@ import androidx.core.content.ContextCompat;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -16,7 +15,6 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.Toast;
 
@@ -158,7 +156,7 @@ public class select extends AppCompatActivity {
                                                     // Set target view
                                                     int targetViewID = targetLayout.getResources().getIdentifier(idString, "id", getPackageName());
                                                     if (targetViewID != 0) {
-                                                        CheckBox targetCheckbox = (CheckBox) findViewById(targetViewID);
+                                                        CheckBox targetCheckbox = (CheckBox) targetLayout.findViewById(targetViewID);
                                                         if (targetCheckbox != null) {
                                                             targetCheckbox.setChecked(true);
                                                         }
@@ -173,7 +171,7 @@ public class select extends AppCompatActivity {
                                                     // Set target view
                                                     int targetViewID = targetLayout.getResources().getIdentifier(idString, "id", getPackageName());
                                                     if (targetViewID != 0) {
-                                                        CheckBox targetCheckbox = (CheckBox) findViewById(targetViewID);
+                                                        CheckBox targetCheckbox = (CheckBox) targetLayout.findViewById(targetViewID);
                                                         if (targetCheckbox != null) {
                                                             targetCheckbox.setChecked(false);
                                                         }
@@ -265,6 +263,7 @@ public class select extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(select.this, language.class));
         }
     }.start();

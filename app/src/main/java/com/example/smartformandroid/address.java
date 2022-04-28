@@ -49,6 +49,7 @@ public class address extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(address.this, language.class));
         }
     }.start();

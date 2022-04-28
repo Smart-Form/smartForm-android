@@ -140,6 +140,7 @@ public class question_daterange extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(question_daterange.this, language.class));
         }
     }.start();

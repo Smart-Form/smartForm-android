@@ -36,6 +36,7 @@ public class bye extends AppCompatActivity {
                 countDownTimer.cancel();
                 finish();
                 startActivity(new Intent(bye.this, language.class));
+                System.exit(0); // Clear the memory
             }
         });
     }
@@ -48,6 +49,7 @@ public class bye extends AppCompatActivity {
             countDownTimer.cancel();
             finish();
             startActivity(new Intent(bye.this, language.class));
+            System.exit(0); // Clear the memory
         }
     }.start();
 }

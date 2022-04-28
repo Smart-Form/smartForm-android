@@ -59,6 +59,7 @@ public class address_confirm extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(address_confirm.this, language.class));
         }
     }.start();

@@ -121,6 +121,7 @@ public class question_text extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(question_text.this, language.class));
         }
     }.start();

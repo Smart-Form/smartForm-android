@@ -118,6 +118,7 @@ public class question_date extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(question_date.this, language.class));
         }
     }.start();

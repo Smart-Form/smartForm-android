@@ -90,6 +90,7 @@ public class question_text_cht extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(question_text_cht.this, language.class));
         }
     }.start();

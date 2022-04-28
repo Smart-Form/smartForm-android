@@ -90,6 +90,7 @@ public class question_signature extends AppCompatActivity {
         }
 
         Button btn = (Button) findViewById(R.id.loading);
+        btn.setEnabled(false);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -257,6 +258,7 @@ public class question_signature extends AppCompatActivity {
         public void onFinish() {
             countDownTimer.cancel();
             finish();
+            System.exit(0); // Clear the memory
             startActivity(new Intent(question_signature.this, language.class));
         }
     }.start();
