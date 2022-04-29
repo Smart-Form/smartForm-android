@@ -80,7 +80,7 @@
         android:layout_alignParentBottom="true"
 
         android:text="Question 8"
-        android:textAppearance="@style/title"
+        android:textAppearance="@style/title2"
         android:maxLines="1"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
@@ -163,7 +163,8 @@
                 android:layout_alignParentBottom="true"
 
                 android:text="Education level"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/title4"
+                android:ellipsize="end"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:gravity="left|top"
@@ -195,7 +196,8 @@
 
                 android:text="No schooling"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -226,7 +228,8 @@
 
                 android:text="Kindergarten / child care centre"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -255,7 +258,8 @@
                 android:text="Primary"
 
                 android:textAllCaps="false"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:textColor="#000000"
                 android:textStyle="bold"
@@ -287,7 +291,8 @@
 
                 android:text="Secondary"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -318,7 +323,8 @@
 
                 android:text="Vocational training school"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -349,7 +355,8 @@
 
                 android:text="Tertiary"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"

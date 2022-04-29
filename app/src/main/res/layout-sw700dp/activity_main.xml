@@ -124,7 +124,7 @@
         android:layout_alignParentBottom="true"
 
         android:text="Click to start"
-        android:textAppearance="@style/title"
+        android:textAppearance="@style/title2"
 
         app:layout_constraintStart_toStartOf="@+id/guideline_titleStart"
         app:layout_constraintTop_toTopOf="parent"

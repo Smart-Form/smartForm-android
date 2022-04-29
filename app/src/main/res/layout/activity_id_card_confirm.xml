@@ -127,7 +127,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
 
-        android:text="Name: CHAN Tai Man\nID no.: A1234567(1)\nBirth: 1950-01-01"
+        android:text="CHAN Tai Man\nA1234567(1)\nDate of Birth:\n1950-01-01\nDate of Issue:\n1961-01-04"
         android:textColor="#000000"
         android:autoSizeTextType="uniform"
 

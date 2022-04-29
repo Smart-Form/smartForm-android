@@ -80,7 +80,7 @@
         android:layout_alignParentBottom="true"
 
         android:text="Question 5"
-        android:textAppearance="@style/title"
+        android:textAppearance="@style/title2"
         android:maxLines="1"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
@@ -163,7 +163,8 @@
                 android:layout_alignParentBottom="true"
 
                 android:text="Accommodation status"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/title4"
+                android:ellipsize="end"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:gravity="left|top"
@@ -195,7 +196,8 @@
 
                 android:text="Self-owned"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -226,7 +228,8 @@
 
                 android:text="Rented"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -257,7 +260,8 @@
 
                 android:text="Public Housing"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -288,7 +292,8 @@
 
                 android:text="Living with family"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -319,7 +324,8 @@
 
                 android:text="Self-owned with mortgage"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"
@@ -350,7 +356,8 @@
 
                 android:text="None of the above"
                 android:textColor="#000000"
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/text3"
+                android:ellipsize="end"
                 android:maxLines="2"
                 android:backgroundTint="#CCCCCC"
                 app:cornerRadius="100dp"

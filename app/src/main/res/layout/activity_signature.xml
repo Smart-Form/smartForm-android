@@ -80,7 +80,7 @@
         android:layout_alignParentBottom="true"
 
         android:text="Please sign below"
-        android:textAppearance="@style/title"
+        android:textAppearance="@style/title2"
         android:maxLines="1"
         android:textStyle="bold"
         android:textColor="#FFFFFF"

@@ -52,7 +52,7 @@
         android:layout_alignParentBottom="true"
 
         android:text="Apply using previously stored answer(s)?"
-        android:textAppearance="@style/title"
+        android:textAppearance="@style/title2"
         android:maxLines="2"
         android:textStyle="bold"
         android:textColor="#FFFFFF"

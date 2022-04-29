@@ -80,7 +80,7 @@
         android:layout_alignParentBottom="true"
 
         android:text="Question 1"
-        android:textAppearance="@style/title"
+        android:textAppearance="@style/title2"
         android:maxLines="1"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
@@ -163,7 +163,8 @@
                 android:layout_alignParentBottom="true"
 
                 android:text="Income per month (excluding contributions from family members, relatives and friends, etc.) "
-                android:autoSizeTextType="uniform"
+                android:textAppearance="@style/subtitle"
+                android:ellipsize="end"
                 android:textStyle="bold"
                 android:textColor="#000000"
                 android:gravity="left|top"
