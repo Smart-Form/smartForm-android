@@ -39,10 +39,10 @@
         <entry key="app/src/main/res/layout/activity_launch_screen.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24155622060709706" />
-        <entry key="app/src/main/res/layout/activity_question_binary.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_question_binary.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_question_date.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_question_daterange.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/activity_question_mc.xml" value="0.11406765676567657" />
+        <entry key="app/src/main/res/layout/activity_question_mc.xml" value="0.10087490774223906" />
         <entry key="app/src/main/res/layout/activity_question_option.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_question_option2.xml" value="0.11406765676567657" />
         <entry key="app/src/main/res/layout/activity_question_option3.xml" value="0.11406765676567657" />

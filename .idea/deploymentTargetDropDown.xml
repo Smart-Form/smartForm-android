@@ -7,11 +7,11 @@
         <deviceKey>
           <Key>
             <type value="VIRTUAL_DEVICE_PATH" />
-            <value value="$USER_HOME$/.android/avd/smartForm-prototype_API_31.avd" />
+            <value value="$USER_HOME$/.android/avd/tablet_API_31.avd" />
           </Key>
         </deviceKey>
       </Target>
     </targetSelectedWithDropDown>
-    <timeTargetWasSelectedWithDropDown value="2022-02-19T15:56:24.207773Z" />
+    <timeTargetWasSelectedWithDropDown value="2022-04-30T08:03:48.475549Z" />
   </component>
 </project>
