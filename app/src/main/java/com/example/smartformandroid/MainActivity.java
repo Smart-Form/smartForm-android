@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 countDownTimer.cancel();
                 finish();
-                startActivity(new Intent(MainActivity.this, id_card.class));
+                startActivity(new Intent(MainActivity.this, language.class));
             }
         });
         // backBTN 2 end
